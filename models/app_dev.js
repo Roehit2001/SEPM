@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const df = new mongoose.Schema({
+const app_dev = new mongoose.Schema({
     level1: String,
     time1: String,
     level2: String,
@@ -20,4 +20,4 @@ const df = new mongoose.Schema({
     t9: String
 });
 
-module.exports = mongoose.model('df', df);
+module.exports = mongoose.model('app_dev', app_dev);

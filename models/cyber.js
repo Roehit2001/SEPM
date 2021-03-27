@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const fs = new mongoose.Schema({
+const cyber = new mongoose.Schema({
     level1: String,
     time1: String,
     level2: String,
@@ -20,4 +20,4 @@ const fs = new mongoose.Schema({
     t9: String
 });
 
-module.exports = mongoose.model('fs', fs);
+module.exports = mongoose.model('cyber', cyber);

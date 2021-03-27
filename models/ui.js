@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const c_vision = new mongoose.Schema({
+const ui = new mongoose.Schema({
     level1: String,
     time1: String,
     level2: String,
@@ -20,4 +20,4 @@ const c_vision = new mongoose.Schema({
     t9: String
 });
 
-module.exports = mongoose.model('c_vision', c_vision);
+module.exports = mongoose.model('ui', ui);

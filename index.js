@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const app = express();
 // const ejsLint = require('ejs-lint');
 const User = require('./models/user');
-const C_vision = require('./models/C_vision');
-const df = require('./models/df');
-const fs = require('./models/fs');
+const app_dev = require('./models/app_dev');
+const ui = require('./models/ui');
+const cyber = require('./models/cyber');
 const web = require('./models/web');
 const corporate = require('./models/corporate');
 const Question = require('./models/question');
@@ -14,7 +14,7 @@ const bcrypt = require('bcrypt');
 const session = require("express-session");
 const e = require('express');
 const user = require('./models/user');
-mongoose.connect('mongodb://localhost:27017/SCRO_2002', { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { console.log("MONGO CONNECTION OPEN") }).catch(err => {
+mongoose.connect('mongodb://localhost:27017/SEPM', { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { console.log("MONGO CONNECTION OPEN") }).catch(err => {
     console.log("THERE IS A PROBLEM");
     console.log(err)
 });
@@ -38,7 +38,7 @@ const requireLogin = (req, res, next) => {
     }
     next();
 }
-const c_vision = new C_vision({
+const App_dev = new app_dev({
     level1: "",
     time1: "",
     level2: "",
@@ -57,7 +57,7 @@ const c_vision = new C_vision({
     t8: "",
     t9: ""
 });
-c_vision.save();
+App_dev.save();
 const Corporate = new corporate({
     level1: "",
     time1: "",
@@ -79,7 +79,7 @@ const Corporate = new corporate({
 });
 Corporate.save();
 
-const Df = new df({
+const Ui = new ui({
     level1: "",
     time1: "",
     level2: "",
@@ -98,8 +98,8 @@ const Df = new df({
     t8: "",
     t9: ""
 });
-Df.save();
-const Fs = new fs({
+Ui.save();
+const Cyber = new cyber({
     level1: "",
     time1: "",
     level2: "",
@@ -118,7 +118,7 @@ const Fs = new fs({
     t8: "",
     t9: ""
 });
-Fs.save();
+Cyber.save();
 const Web = new web({
     level1: "",
     time1: "",
@@ -146,14 +146,7 @@ app.get("/register", (req, res) => {
 app.post("/register", async (req, res) => {
     const { name, department, whatsapp_number, email, reg, year, phone_number, password } = req.body;
     const hash = await bcrypt.hash(password, 12);
-    // const splitEmail = (email) => {
-    //     const result = email.split('@');
-    //     if (result[1] === "srmist.edu.in") {
-    //         const emailName = result[0];
-    //         console.log(emailName);
-    //     }
-    // }
-    // splitEmail(email);
+    
     User.findOne({ email: email }).then(user => {
         if (user) {
             res.render("register", { msg: "User already exist" });
@@ -163,26 +156,16 @@ app.post("/register", async (req, res) => {
                 email,
                 password: hash,
                 name,
-                department,
-                reg,
-                year,
-                whatsapp_number,
                 phone_number,
                 selection_level: "wait",
                 selection_level1: "wait",
                 domain_1: "",
                 domain_2: "",
-                behance: "",
-                dribble: "",
-                github: "",
-                medium: "",
                 linkedin: "",
-                Assignment1: "",
                 day: "",
                 time: "",
                 day1: "",
-                time2: "",
-                crop: ""
+                time2: ""
             });
             user.save();
             req.session.user_id = user._id;
@@ -237,16 +220,16 @@ app.get("/portal/:id", requireLogin, (req, res) => {
         if (!user) {
             req.redirect("/login");
         }
-        fs.find({}, (err, data1) => {
+        cyber.find({}, (err, data1) => {
 
-            C_vision.find({}, (err, data2) => {
+            app_dev.find({}, (err, data2) => {
 
                 corporate.find({}, (err, data3) => {
 
-                    df.find({}, (err, data5) => {
+                    ui.find({}, (err, data5) => {
                         web.find({}, (err, data6) => {
                             res.set('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
-                            res.render("portal", { id: req.params.id, user: user, fs: data1, C_vision: data2, corporate: data3, df: data5, web: data6 });
+                            res.render("portal", { id: req.params.id, user: user, cyber: data1, app_dev: data2, corporate: data3, ui: data5, web: data6 });
                         })
                     })
 
@@ -279,11 +262,7 @@ app.post("/someMore0/:id", requireLogin, (req, res) => {
 app.post("/someMore1/:id", requireLogin, (req, res) => {
     const id = req.params.id;
     User.findByIdAndUpdate(id, {
-        "behance": req.body.behance,
-        "dribble": req.body.dribble,
-        "medium": req.body.medium,
         "linkedin": req.body.linkedin,
-        "corp": req.body.corp
     }, (err, result) => {
         if (err) {
             console.log(err);
@@ -558,16 +537,16 @@ app.get("/admin/:id", requireLogin, (req, res) => {
 
     User.find({}, (err, data) => {
 
-        fs.find({}, (err, data1) => {
+        cyber.find({}, (err, data1) => {
 
-            C_vision.find({}, (err, data2) => {
+            app_dev.find({}, (err, data2) => {
 
                 corporate.find({}, (err, data3) => {
 
-                    df.find({}, (err, data5) => {
+                    ui.find({}, (err, data5) => {
                         web.find({}, (err, data6) => {
                             // res.set('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
-                            res.render("admin", { user: data, fs: data1, C_vision: data2, corporate: data3, df: data5, web: data6, id: req.params.id });
+                            res.render("admin", { user: data, cyber: data1, app_dev: data2, corporate: data3, ui: data5, web: data6, id: req.params.id });
                         })
                     })
 
@@ -633,13 +612,13 @@ app.post("/data/:name/:admin", requireLogin, async (req, res) => {
     const { level1, time1, level2, time2, Assi, d1, t1, t2, t3, d2, t4, t5, t6, d3, t7, t8, t9 } = req.body;
     // console.log(req.body);
     var data;
-    if (name == "C_vision") {
-        C_vision.deleteMany({}, () => {
+    if (name == "app_dev") {
+        app_dev.deleteMany({}, () => {
 
         });
 
-        // C_vision.remove().exec();
-        data = new C_vision({
+        // app_dev.remove().exec();
+        data = new app_dev({
             level1,
             time1,
             level2,
@@ -684,12 +663,12 @@ app.post("/data/:name/:admin", requireLogin, async (req, res) => {
             t9
         });
     }
-    if (name == "df") {
-        // df.remove().exec();
-        df.deleteMany({}, () => {
+    if (name == "ui") {
+        // ui.remove().exec();
+        ui.deleteMany({}, () => {
 
         });
-        data = new df({
+        data = new ui({
             level1,
             time1,
             level2,
@@ -733,12 +712,12 @@ app.post("/data/:name/:admin", requireLogin, async (req, res) => {
             t9
         });
     }
-    if (name == "fs") {
-        // fs.remove().exec();
-        fs.deleteMany({}, () => {
+    if (name == "cyber") {
+        // cyber.remove().exec();
+        cyber.deleteMany({}, () => {
 
         });
-        data = new fs({
+        data = new cyber({
             level1,
             time1,
             level2,
