@@ -14,7 +14,7 @@ const bcrypt = require('bcrypt');
 const session = require("express-session");
 const e = require('express');
 const user = require('./models/user');
-mongoose.connect('mongodb://localhost:27017/SEPM', { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { console.log("MONGO CONNECTION OPEN") }).catch(err => {
+mongoose.connect('mongodb://localhost:27017/SEPM1', { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { console.log("MONGO CONNECTION OPEN") }).catch(err => {
     console.log("THERE IS A PROBLEM");
     console.log(err)
 });
@@ -188,7 +188,7 @@ app.post("/login", async (req, res) => {
         const validPassword = await bcrypt.compare(password, user.password);
 
         if (validPassword) {
-            if (user.email == "webdev.scro@gmail.com") {
+            if (user.email == "admin@gmail.com") {
                 console.log("Admin Logged in" + datetime);
                 req.session.user_id = user._id;
                 return res.redirect("/admin/" + user._id);
@@ -327,7 +327,7 @@ app.get("/choose/:id", requireLogin, (req, res) => {
 });
 app.get("/eadmin/:id", requireLogin, (req, res) => {
     User.findById(req.params.id, (err, user) => {
-        if ((user.email == "webdev.scro@gmail.com")) {
+        if ((user.email == "admin@gmail.com")) {
 
             Question.find({}, (err, data) => {
                 res.render("eadmin", { id: req.params.id, data: data });
@@ -530,7 +530,7 @@ app.post("/logout", (req, res) => {
 // });
 app.get("/admin/:id", requireLogin, (req, res) => {
     User.findById(req.params.id, (err, user) => {
-        if (!(user.email == "webdev.scro@gmail.com")) {
+        if (!(user.email == "admin@gmail.com")) {
             res.redirect("/login");
         }
     });
