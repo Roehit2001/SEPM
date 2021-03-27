@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRO - Student Copter Research Organization [SRM IST]</title>
+    <link rel="icon" href="/img/logowhite.svg" type="image/x-icon">
+</head>
+
+<body>
+    <form action="/question" method="POST">
+        <input type="text" name="question" placeholder="Question">
+        <input type="text" name="option1" placeholder="Option 1">
+        <input type="text" name="option2" placeholder="option 2">
+        <input type="text" name="option3" placeholder="option 3">
+        <input type="text" name="option4" placeholder="option 4">
+        <select name="domain">
+            <option value="C_vision">Computer vision</option>
+            <option value="corporate">corporate</option>
+            <option value="df">Design and fabrication</option>
+            <option value="web">Web development</option>
+            <option value="fs">Flight Systems</option>
+        </select>
+        <input type="text" name="Answer" placeholder="Answer">
+        <button>+</button>
+    </form>
+    <br>
+    <table border="2px">
+        <thead>
+            <td>Question</td>
+            <td>Option1 </td>
+            <td>Option2</td>
+            <td>Option 3</td>
+            <td>Option4</td>
+            <td>Answer</td>
+            <td>Domain</td>
+        </thead>
+        <tbody>
+            <%data.forEach(function(data){%>
+                <tr>
+                    <td>
+                        <%=data.question%>
+                    </td>
+                    <td>
+                        <%=data.option1%>
+                    </td>
+                    <td>
+                        <%=data.option2%>
+                    </td>
+                    <td>
+                        <%=data.option3%>
+                    </td>
+                    <td>
+                        <%=data.option4%>
+                    </td>
+                    <td>
+                        <%=data.Answer%>
+                    </td>
+                    <td>
+                        <%=data.domain%>
+                    </td>
+                </tr>
+                <%});%>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

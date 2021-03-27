@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SCRO - Student Copter Research Organization [SRM IST]</title>
+    <link rel="icon" href="/img/logowhite.svg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="inter" class="main">
+                <img src="/img/Group 1.png" class="box1">
+                <img src="/img/Group 2.png" class="box2">
+                <img src="/img/Group 4.png" class="box3">
+                <img src="/img/Group 3.png" class="box4">
+    <div class="container">
+        <div class="heading">
+            <h1 style="margin-top: 20px;">CHOOSE YOUR EXAM</h1>
+            <img src="/img/Line 1.png " style="width: 100%; ">
+        </div>
+        <div class="card-deck col-9" style="position: relative; margin-top: 10%; z-index: 99;">
+            <div class="card ">
+              <%if(user.domain_2=="corporate"){%>
+                <img class="card-img-top" src="/img/Layer 2.png "><%}%>
+                <%if(user.domain_2=="web"){%>
+                      <img class="card-img-top " src="/img/Layer -1.png "><%}%>
+                      <%if(user.domain_2=="C_vision"){%>
+                        <img class="card-img-top " src="/img/Layer -2.png "><%}%>
+                        <%if(user.domain_2=="df"){%>
+                            <img class="card-img-top " src="/img/Layer -3.png "><%}%>
+                            <%if(user.domain_2=="fs"){%>
+                                <img class="card-img-top " src="/img/Layer -4.png "><%}%>
+              <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
+                <h5 class="card-title " style="text-align: center; "><%if(user.domain_2=="fs"){%>
+                  Flight Systems
+                  <%}%>
+                  <%if(user.domain_2=="C_vision"){%>
+                      Computer Vision
+                      <%}%>
+                      <%if(user.domain_2=="fs"){%>
+                          Flight Systems
+                          <%}%>
+                          <%if(user.domain_2=="df"){%>
+                              Design and Fabrication
+                              <%}%>
+                              <%if(user.domain_2=="corporate"){%>
+                                  Corporate
+                                  <%}%>
+                                  <%if(user.domain_2=="web"){%>
+                                      Web Development
+                                  <%}%></h5>
+                                  <form action="/exam/<%=user._id%>/<%=user.domain_2%>" method="get">
+                                    <%if(user.selection_level1!="Exam Given"){%>
+                                <button style="margin-left: 30%;
+                                margin-right: auto;
+                                width: 40%;
+                                height: 38px;" disabled class="button">Write Exam</button>
+                                <%}else{%>
+                                    <p>Exam Given</p>
+                                            <%}%>
+                                </form>
+              </div>
+            </div>
+            <div class="card ">
+              <%if(user.domain_1=="corporate"){%>
+                <img class="card-img-top" src="/img/Layer 2.png "><%}%>
+                <%if(user.domain_1=="web"){%>
+                      <img class="card-img-top " src="/img/Layer -1.png "><%}%>
+                      <%if(user.domain_1=="C_vision"){%>
+                        <img class="card-img-top " src="/img/Layer -2.png "><%}%>
+                        <%if(user.domain_1=="df"){%>
+                            <img class="card-img-top " src="/img/Layer -3.png "><%}%>
+                            <%if(user.domain_1=="fs"){%>
+                                <img class="card-img-top " src="/img/Layer -4.png "><%}%>
+              <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
+                <h5 class="card-title " style="text-align: center; "><%if(user.domain_1=="fs"){%>
+                  Flight Systems
+                  <%}%>
+                  <%if(user.domain_1=="C_vision"){%>
+                      Computer Vision
+                      <%}%>
+                      <%if(user.domain_1=="fs"){%>
+                          Flight Systems
+                          <%}%>
+                          <%if(user.domain_1=="df"){%>
+                              Design and Fabrication
+                              <%}%>
+                              <%if(user.domain_1=="corporate"){%>
+                                  Corporate
+                                  <%}%>
+                                  <%if(user.domain_1=="web"){%>
+                                      Web Development
+                                  <%}%></h5>
+                                  <form action="/exam/<%=user._id%>/<%=user.domain_1%>" method="get">
+                                    <%if(user.selection_level!="Exam Given"){%>
+                                <button class="button" style="margin-left: 30%;
+                                margin-right: auto;
+                                width: 40%;
+                                height: 38px;" disabled>Write Exam</button>
+                                <%}else{%>
+                                  <p>Exam Given</p>
+                                    <%}%>
+                                </form>
+                                
+              </div>
+            </div>
+        </div><p style="color: red; margin-top: 10%;">NOTE: Your 10 min starts as soon as you click write exams, Click start test to view questions.</p>
+          
+    </div>
+    
+
+</div>
+
+<!-- <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <%if(user.domain_1=="fs"){%>
+        Flight Systems
+        <%}%>
+        <%if(user.domain_1=="C_vision"){%>
+            Computer Vision
+            <%}%>
+            <%if(user.domain_1=="fs"){%>
+                Flight Systems
+                <%}%>
+                <%if(user.domain_1=="df"){%>
+                    Design and Fabrication
+                    <%}%>
+                    <%if(user.domain_1=="corporate"){%>
+                        Corporate
+                        <%}%>
+                        <%if(user.domain_1=="web"){%>
+                            Web Development
+                        <%}%>
+                        
+    <form action="/exam/<%=user._id%>/<%=user.domain_1%>" method="get">
+        <%if(user.selection_level!="Exam Given"){%>
+    <button>Write Exam</button>
+    <%}else{%>
+Exam Given
+        <%}%>
+    </form>
+    
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <%if(user.domain_2=="fs"){%>
+        Flight Systems
+        <%}%>
+        <%if(user.domain_2=="C_vision"){%>
+            Computer Vision
+            <%}%>
+            <%if(user.domain_2=="fs"){%>
+                Flight Systems
+                <%}%>
+                <%if(user.domain_2=="df"){%>
+                    Design and Fabrication
+                    <%}%>
+                    <%if(user.domain_2=="corporate"){%>
+                        Corporate
+                        <%}%>
+                        <%if(user.domain_2=="web"){%>
+                            Web Development
+                        <%}%>
+    <form action="/exam/<%=user._id%>/<%=user.domain_2%>" method="get">
+        <%if(user.selection_level1!="Exam Given"){%>
+    <button>Write Exam</button>
+    <%}else{%>
+        Exam Given
+                <%}%>
+    </form>
+
+  </div>
+</div> -->
+<a href="/portal/<%=user._id%>"><button style="    bottom: 7%;  left: 5%;  position: absolute;" class="button">Back to portal</button></a>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SCRO - Student Copter Research Organization [SRM IST]</title>
+    <link rel="icon" href="/img/logowhite.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Question</title>
+    <style>html { overflow-y: scroll; overflow-x:hidden; }body { position: absolute; }</style>
+</head>
+<body>
+    <button onclick="visstart(); openFullscreen();" class="button" style=" margin: 0;
+    position: fixed; width: 20%;height: 20%;
+    top: 40%;right: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); -ms-transform: translateX(50%);
+    transform: translateX(50%);" id="startbtn">START TEST</button>
+        <div id="eportal" style="display: none;">
+        <div>
+                <img src="/img/Group 1.png"  style="position:fixed;" class="box1">
+                <img src="/img/Group 2.png" style="position:fixed;" class="box2">
+                <img src="/img/Group 4.png" style="position:fixed;" class="box3">
+                <img src="/img/Group 3.png" style="position:fixed;" class="box4">
+        </div>
+       <%var i=1;%>
+        <h1 id="Timer" style="position: fixed; top: 83; right: 80; z-index: 99;"></h1>
+        <img src="/img/clocks.png" style="position: fixed; top: 30; right: 40;">
+        
+
+    
+        <form style="margin-left:20%; margin-top:5%;" action="/questions" method="post">
+          <input type="text" value="<%=userId%>" name="userId" hidden>
+          <%question.forEach(function(data){%>
+            <!-- <div id="xyz<%=i%>" style="margin-left: 100px; margin-top: 150px; display: flexbox; margin-right: 200px;position: relative;"></div> -->
+                
+                
+                
+                <div style="display: flex;">
+                    <img src="/img/Polygon 6.png" style="height: 50px; ">
+                    <h1 style=" padding-left: 40px;">Q<%=i%></h1>
+                </div>
+                <div>
+                    <p style="margin-top: 2%; font-size: 30px; transform: translateX(-4%);  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><%=data.question%></p>
+                    <input type="text" name="q<%=i%>" value="<%=data.question%>" hidden>
+                    <p>A. <%=data.option1%></p>
+                    <p>B. <%=data.option2%></p>
+                    <p>C. <%=data.option3%></p>
+                    <p>D. <%=data.option4%></p>
+                    <select style="margin: 10%;" name="a<%=i%>">
+                        <option value="NIL">Choose</option>
+                        <option value="<%=data.option1%>">Option A</option>
+                        <option value="<%=data.option2%>">Option B</option>
+                        <option value="<%=data.option3%>">Option C</option>
+                        <option value="<%=data.option4%>">Option D</option>
+                      </select>    
+                <%i++%>
+                
+                
+                <%});%>
+                <input type="text" name="domain" value="<%=domain%>" hidden>
+                <button onclick="closeFullscreen()" style="width: 100%; margin-bottom: 25%;" class="button">Submit & Finish Test</button>
+        </form><br>
+        <p style="margin-top: 5%;">P.S. If you do not click submit before the end of time, it will be considered as invalid test.</p>
+        
+</div>
+
+</div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        let timer = 600;
+        var timing = setInterval(function(){     
+            if(timer==0){
+                // alert("timesup , going back to exam portal dashboard.");   
+                 window.location.href="/portal/<%=userId%>";            
+            }
+            else{
+                timer-=1;
+                if(timer<60){
+                        timer="0"+timer;
+                    $('#Timer').css('color', 'red');
+                }
+                 $('#Timer').text(timer);
+            }
+        }, 1000);
+        var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+function closeFullscreen() {
+    window.location.href="/portal/<%=userId%>";
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+  
+}
+
+function visstart(){
+    document.getElementById("eportal").style.display = "flex";
+    document.getElementById("startbtn").style.display = "none";
+}
+    </script>
+</body>          
