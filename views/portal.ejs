@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="/img/logowhite.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruitment Portal</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css" integrity="sha512-QTQigm89ZvHzwoJ/NgJPghQPegLIwnXuOXWEdAjjOvpE9uaBGeI05+auj0RjYVr86gtMaBJRKi8hWZVsrVe/Ug==" crossorigin="anonymous"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css"
+        integrity="sha512-QTQigm89ZvHzwoJ/NgJPghQPegLIwnXuOXWEdAjjOvpE9uaBGeI05+auj0RjYVr86gtMaBJRKi8hWZVsrVe/Ug=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -13,23 +17,22 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href=/ico/apple-touch-icon-57-precomposed.png ">
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.0.6/css/all.css ">
-    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
-    <link rel="stylesheet " href="/css/styles.css ">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/scss/_buttons.scss " rel="stylesheet/scss "
-        type="text/css ">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/scss/_reboot.scss " rel="stylesheet/scss "
-        type="text/css ">
+    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png ">
+    <link rel=" stylesheet " href=" https://use.fontawesome.com/releases/v5.0.6/css/all.css ">
+    <link rel=" stylesheet "
+        href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <link rel=" stylesheet " href=" /css/styles.css ">
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/scss/_buttons.scss " rel="
+        stylesheet/scss " type=" text/css ">
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/scss/_reboot.scss " rel="
+        stylesheet/scss " type=" text/css ">
 </head>
-<body onload="vis1(); ">
+
+<body onload=" vis1(); ">
     <!-- <script>
         $('.btn-style').prop('disabled', false)
     </script> -->
-    <div class="sidenav ">
-        <!-- <a class="logo" href="https://srmscro.com/">
-        <img src="/img/logowhite.svg">
-        </a> -->
+    <div class=" sidenav ">
         <a onclick="vis1()">
             <img src="/img/dashboard.png ">
         </a>
@@ -51,29 +54,33 @@
                 <img src="/img/Line 1.png " style="width: 100%; ">
             </div>
             <div class="welcome ">
-                <h1 style="padding-top: 2%;">Welcome <%=user.name%></h1>
-                <p style="color: black; padding-top: 1%; ">Welcome to SCRO. This is your personal Dashboard - a one-stop all-in-all for everything related to SCRO and your relationship
-                     to the team in terms of customised events, results, updates and announcements. 
-                     Make yourself at home at one of SRM’s foremost premier research teams - and sit with us and take a ride as you watch us navigate, 
-                     conquer, explore and redefine.</p><br>
-                     <%if((user.domain_1!="")&&(user.linkedin=="")){%>
-                        <p style="color: red;">Please go to application details and apply for your domains.</p>
-                        <%}%><br>
+                <h1 style="padding-top: 2%;">Welcome <%=user.name%>
+                </h1>
+                <p style="color: black; padding-top: 1%; ">Welcome to XXXXX. This is your personal Dashboard - a
+                    one-stop
+                    all-in-all for everything related to XXXXX and your relationship
+                    to the team in terms of customised events, results, updates and announcements.
+                    Make yourself at home at one of SRM’s foremost premier research teams - and sit with us and take a
+                    ride as you watch us navigate,
+                    conquer, explore and redefine.</p><br>
+                <%if((user.domain_1!="")&&(user.linkedin=="")){%>
+                    <p style="color: red;">Please go to application details and apply for your domains.</p>
+                    <%}%><br>
             </div>
-            <div class="card-deck col-9" style="position: relative; z-index: 99;">
+            <div class="card-deck col-lg-12" style="position: relative; z-index: 99;">
                 <div class="card ">
-                  <img class="card-img-top " src="/img/resume1 (1).svg ">
-                  <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-                    <h5 class="card-title " style="text-align: center; ">Check Your Application Details</h5>
-                    <a onclick="vis2()"><button class="btn-style ">View</button></a>
-                  </div>
+                    <img class="card-img-top " src="/img/resume1 (1).svg ">
+                    <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
+                        <h5 class="card-title " style="text-align: center; ">Check Your Application Details</h5>
+                        <a onclick="vis2()"><button class="btn-style ">View</button></a>
+                    </div>
                 </div>
                 <div class="card ">
-                  <img class="card-img-top " src="/img/process 1 (1).svg ">
-                  <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-                    <h5 class="card-title " style="text-align: center; ">Status of your Application</h5>
-                    <a onclick="vis3()"><button class="btn-style ">View</button></a>
-                  </div>
+                    <img class="card-img-top " src="/img/process 1 (1).svg ">
+                    <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
+                        <h5 class="card-title " style="text-align: center; ">Status of your Application</h5>
+                        <a onclick="vis3()"><button class="btn-style ">View</button></a>
+                    </div>
                 </div>
                 <!-- <div class="card ">
                   <img class="card-img-top " src="/img/Solid1 (1).svg " style="padding-top: 1%; ">
@@ -83,163 +90,194 @@
                   </div>
                 </div> -->
             </div>
-              
+
         </div>
-        
+
 
     </div>
-<!-- ----------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxx--------------------------- -->
-<!-- --------------------APPLICATION DETAILS-------------------------------------- -->
-<div id="app_details" class="main">
-    <div class="container">
-      <div>
-        <h1 style="margin-top: 20px; ">APPLICATION DETAILS</h1>
-        <img src="/img/Line 1.png " style="width: 100%; ">
-        <p><h5>NOTE: Maximum of two domains can be applied</h5></p>
-        <p>
-            <%if((user.domain_1=="")||(user.domain_2=="")){%>
-            <form id="domainsel" action="/domain/<%=id%>" method="POST">
-                Domain 1 :
-                <select id="select1" name="domain_1">
-<option value="C_vision">Computer Vision</option>
-<option value="corporate">Corporate</option>
-<option value="df">Design and fabrication</option>
-<option value="fs">Flight Systems</option>
-<option value="web">Web Development</option>
-</select><br> <br>Domain 2 :
-                <select id="select2" name="domain_2">
-<option value="N/A">Not Applicable</option> <%if(user.domain_1!="C_vision"){%>
-<option value="C_vision">Computer Vision</option>  <%}%><%if(user.domain_1!="corporate"){%>
-<option value="corporate">Corporate</option> <%}%> <%if(user.domain_1!="df"){%>
-<option value="df">Design and fabrication</option> <%}%> <%if(user.domain_1!="fs"){%>
-<option value="fs">Flight Systems</option> <%}%> <%if(user.domain_1!="web"){%>
-<option value="web">Web Development</option> <%}%> 
-</select><br>
-                <button class="button">Submit</button>
-            </form>
-            </p>
-            <%}%>
-      </div>
-      <%if((user.domain_1==user.domain_2)&&(user.domain_1!="")){%> 
-        <button  onclick="alert123()" id="btn_dis" class="button ">ALERT! Click me</button><%}%>
-        <script>
-            function alert123(){
-                alert("You have selected the same domain for domain 1 as well as domain 2, Contact us if this was a mistake");
-                document.getElementById("btn_dis").style.display = "none";
-            }
-        </script>
-    <div class="card-deck col-sm-6" style="margin-top: 5%; position: relative; z-index: 69; ">
-        <%if((user.domain_1=="corporate")||(user.domain_2=="corporate")){%>
-        <div class="card ">
-          <img class="card-img-top" src="/img/Layer 2.png ">
-          <div class="card-body" style="display: flex; justify-content: center; flex-direction: column; ">
-            <h5 class="card-title" style="text-align: center;">CORPORATE</h5>
-            <button class="button" type="button" data-toggle="modal" data-target="#myModal_corporate" style="margin-bottom: 5px; ">Update Details</button>
-          </div>
-        </div><%}%>
-        <%if((user.domain_1=="web")||(user.domain_2=="web")){%>
-        <div class="card ">
-          <img class="card-img-top " src="/img/Layer -1.png ">
-          <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-            <h5 class="card-title " style="text-align: center; ">WEB DEVELOPMENT</h5>
-            <button class="button " type="button " data-toggle="modal" data-target="#myModal_git_link" style="margin-bottom: 10px; ">Update Details</button>
-          </div>
-        </div><%}%>
-        <%if((user.domain_1=="C_vision")||(user.domain_2=="C_vision")){%>
-        <div class="card ">
-          <img class="card-img-top " src="/img/Layer -2.png ">
-          <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-            <h5 class="card-title " style="text-align: center; ">COMPUTER VISION</h5>
-            <button class="button" type="button " data-toggle="modal" data-target="#myModal_git_link" style="margin-top: 8px; ">Update Details</button>
-          </div>
-        </div><%}%>
-        <%if((user.domain_1=="df")||(user.domain_2=="df")){%>
-      <div class="card">
-        <img class="card-img-top " src="/img/Layer -3.png ">
-        <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-          <h5 class="card-title " style="text-align: center; ">DESIGN AND FABRICATION</h5>
-          <button class="button " type="button " data-toggle="modal" data-target="#myModal_d_f" style="margin-bottom: 10px; ">Apply Now</button>
-        </div>
-      </div><%}%>
-      <%if((user.domain_1=="fs")||(user.domain_2=="fs")){%>
-      <div class="card ">
-        <img class="card-img-top " src="/img/Layer -4.png ">
-        <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-          <h5 class="card-title " style="text-align: center; ">FLIGHT SYSTEM</h5>
-          <button class="button " type="button " data-toggle="modal" data-target="#myModal_git_link" style="margin-bottom: 10px; ">Apply Now</button>
-        </div>
-      </div><%}%>
-    </div>
-    <!--  Now -->
-    <!-- The Modal github and linkedin -->
-    <div class="modal fade " id="myModal_d_f">
-      <div class="modal-dialog modal-dialog-centered ">
-        <div class="modal-content ">
-          <!-- Modal Header -->
-          <div class="modal-header ">
-            <h4 class="modal-title ">Showcase Your Work</h4>
-            <button type="button" class="close " data-dismiss="modal">&times;</button>
-          </div>
-          <!-- Modal body -->
-          <div class="modal-body ">
-            <form action="/someMore0/<%=id%>" method="POST">
-    <input type="text" name="linkedin" placeholder="Linkedin Profile" style="padding-left: 10px;">
-    <button type="submit" class="mod_btn"  style="margin-bottom: 20px;">Continue</button>
-    </form>
-    </div>
-    <!-- Modal footer -->
-    </div>
-    </div>
-    </div>
-    <div class="modal fade" id="myModal_corporate">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Showcase Your Work</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form action="/someMore1/<%=id%>" method="POST">
-                        <input type="text" name="linkedin" placeholder="Linkedin Profile" style="padding-left: 10px; margin-bottom: 15px;">
-                        <input type="text" name="behance" placeholder="Behance Profile" style="padding-left: 10px; margin-bottom: 15px;">
-                        <input type="text" name="dribble" placeholder="Dribble Profile" style="padding-left: 10px; margin-bottom: 15px;">
-                        <input type="text" name="medium" placeholder="Medium Profile" style="padding-left: 10px;">
-                        <label for="category">Choose a Category</label>
-                        <select id="category" name="corp">
-                    <option value="Video Editing">Video Editing</option>
-                    <option value="Graphic Design">Graphic Design</option>
-                    <option value="Content Writing">Content Writing</option>
-                </select>
-                <button type="submit" class="mod_btn" style="margin-bottom: 20px;">Continue</button>
-                    </form>
-                </div>
-                <!-- Modal footer -->
+    <!-- ----------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxx--------------------------- -->
+    <!-- --------------------APPLICATION DETAILS-------------------------------------- -->
+    <div id="app_details" class="main">
+        <div class="container">
+            <div>
+                <h1 style="margin-top: 20px; ">APPLICATION DETAILS</h1>
+                <img src="/img/Line 1.png " style="width: 100%; ">
+                <p>
+                <h5>NOTE: Maximum of two domains can be applied</h5>
+                </p>
+                <p>
+                    <%if((user.domain_1=="")||(user.domain_2=="")){%>
+                        <form id="domainsel" action="/domain/<%=id%>" method="POST">
+                            Domain 1 :
+                            <select id="select1" name="domain_1">
+                                <option value="app_dev">App Development</option>
+                                <option value="corporate">Corporate</option>
+                                <option value="ui">Ui & Ux</option>
+                                <option value="cyber">Cyber Security</option>
+                                <option value="web">Web Development</option>
+                            </select><br> <br>Domain 2 :
+                            <select id="select2" name="domain_2">
+                                <option value="N/A">Not Applicable</option>
+                                <%if(user.domain_1!="app_dev"){%>
+                                    <option value="app_dev">App Development</option>
+                                    <%}%>
+                                        <%if(user.domain_1!="corporate"){%>
+                                            <option value="corporate">Corporate</option>
+                                            <%}%>
+                                                <%if(user.domain_1!="ui"){%>
+                                                    <option value="ui">Ui & Ux</option>
+                                                    <%}%>
+                                                        <%if(user.domain_1!="cyber"){%>
+                                                            <option value="cyber">Cyber Security</option>
+                                                            <%}%>
+                                                                <%if(user.domain_1!="web"){%>
+                                                                    <option value="web">Web Development</option>
+                                                                    <%}%>
+                            </select><br>
+                            <button class="button">Submit</button>
+                        </form>
+                </p>
+                <%}%>
             </div>
+            <%if((user.domain_1==user.domain_2)&&(user.domain_1!="")){%>
+                <button onclick="alert123()" id="btn_dis" class="button ">ALERT! Click me</button>
+                <%}%>
+                    <script>
+                        function alert123() {
+                            alert("You have selected the same domain for domain 1 as well as domain 2, Contact us if this was a mistake");
+                            document.getElementById("btn_dis").style.display = "none";
+                        }
+                    </script>
+                    <div class="card-deck col-sm-6 col-lg-12" style="margin-top: 5%; position: relative; z-index: 69; ">
+                        <%if((user.domain_1=="corporate")||(user.domain_2=="corporate")){%>
+                            <div class="card ">
+                                <img class="card-img-top" src="/img/Layer 2.png ">
+                                <div class="card-body"
+                                    style="display: flex; justify-content: center; flex-direction: column; ">
+                                    <h5 class="card-title" style="text-align: center;">CORPORATE</h5>
+                                    <button class="button" type="button" data-toggle="modal"
+                                        data-target="#myModal_corporate" style="margin-bottom: 5px; ">Update
+                                        Details</button>
+                                </div>
+                            </div>
+                            <%}%>
+                                <%if((user.domain_1=="web")||(user.domain_2=="web")){%>
+                                    <div class="card ">
+                                        <img class="card-img-top " src="/img/Layer -1.png ">
+                                        <div class="card-body "
+                                            style="display: flex; justify-content: center; flex-direction: column; ">
+                                            <h5 class="card-title " style="text-align: center; ">WEB DEVELOPMENT</h5>
+                                            <button class="button " type="button " data-toggle="modal"
+                                                data-target="#myModal_git_link" style="margin-bottom: 10px; ">Update
+                                                Details</button>
+                                        </div>
+                                    </div>
+                                    <%}%>
+                                        <%if((user.domain_1=="app_dev")||(user.domain_2=="app_dev")){%>
+                                            <div class="card ">
+                                                <img class="card-img-top " src="/img/Layer -2.png ">
+                                                <div class="card-body "
+                                                    style="display: flex; justify-content: center; flex-direction: column; ">
+                                                    <h5 class="card-title " style="text-align: center; ">App Development
+                                                    </h5>
+                                                    <button class="button" type="button " data-toggle="modal"
+                                                        data-target="#myModal_git_link" style="margin-top: 8px; ">Update
+                                                        Details</button>
+                                                </div>
+                                            </div>
+                                            <%}%>
+                                                <%if((user.domain_1=="ui")||(user.domain_2=="ui")){%>
+                                                    <div class="card ">
+                                                        <img class="card-img-top " src="/img/Layer -3.png ">
+                                                        <div class="card-body "
+                                                            style="display: flex; justify-content: center; flex-direction: column; ">
+                                                            <h5 class="card-title " style="text-align: center; ">Ui & Ux
+                                                            </h5>
+                                                            <button class="button " type="button " data-toggle="modal"
+                                                                data-target="#myModal_d_f"
+                                                                style="margin-bottom: 10px; ">Apply Now</button>
+                                                        </div>
+                                                    </div>
+                                                    <%}%>
+                                                        <%if((user.domain_1=="cyber")||(user.domain_2=="cyber")){%>
+                                                            <div class="card ">
+                                                                <img class="card-img-top " src="/img/Layer -4.png ">
+                                                                <div class="card-body "
+                                                                    style="display: flex; justify-content: center; flex-direction: column; ">
+                                                                    <h5 class="card-title "
+                                                                        style="text-align: center; ">FLIGHT SYSTEM</h5>
+                                                                    <button class="button " type="button "
+                                                                        data-toggle="modal"
+                                                                        data-target="#myModal_git_link"
+                                                                        style="margin-bottom: 10px; ">Apply Now</button>
+                                                                </div>
+                                                            </div>
+                                                            <%}%>
+                    </div>
+                    <!--  Now -->
+                    <!-- The Modal github and linkedin -->
+                    <div class="modal fade " id="myModal_d_f">
+                        <div class="modal-dialog modal-dialog-centered ">
+                            <div class="modal-content ">
+                                <!-- Modal Header -->
+                                <div class="modal-header ">
+                                    <h4 class="modal-title ">Showcase Your Work</h4>
+                                    <button type="button" class="close " data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body ">
+                                    <form action="/someMore0/<%=id%>" method="POST">
+                                        <input type="text" name="linkedin" placeholder="Linkedin Profile"
+                                            style="padding-left: 10px;">
+                                        <button type="submit" class="mod_btn"
+                                            style="margin-bottom: 20px;">Continue</button>
+                                    </form>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal_corporate">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Showcase Your Work</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="/someMore1/<%=id%>" method="POST">
+                                        <input type="text" name="linkedin" placeholder="Linkedin Profile" style="padding-left: 10px;margin-bottom: 15px;width: 100%;text-align: center;">
+                                        <button type="submit" class="mod_btn"
+                                            style="margin-bottom: 20px;">Continue</button>
+                                    </form>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal_git_link">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Showcase Your Work</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="/someMore2/<%=id%>" method="POST">
+                                        <input type="text" name="linkedin" placeholder="Linkedin Profile" style="padding-left: 10px;margin-bottom: 15px;width: 100%;text-align: center;">
+                                        <button type="submit" class="mod_btn"
+                                            style="margin-bottom: 20px;">Continue</button>
+                                    </form>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+                    </div>
         </div>
-    </div>
-    <div class="modal fade" id="myModal_git_link">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Showcase Your Work</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form action="/someMore2/<%=id%>" method="POST">
-                        <input type="text" name="linkedin" placeholder="Linkedin Profile" style="padding-left: 10px; margin-bottom: 15px;">
-                        <input type="text" name="github" placeholder="Github Profile" style="padding-left: 10px; margin-bottom: 15px;">
-                        <button type="submit" class="mod_btn"  style="margin-bottom: 20px;">Continue</button>
-                    </form>
-                </div>
-                <!-- Modal footer -->
-            </div>
-        </div>
-    </div>
-    </div>
     </div>
     <!-- --------------------------------------------------------------------- -->
     <!-- -------------------------STATUS OF APPLICATION-------------------------------------------- -->
@@ -252,456 +290,496 @@
             <div class="row">
                 <div class="col-md-12 col-xs-4">
                     <div class="sections text-center">
-                        <button type="button" id="APPbtn" class="btn btn-primary events_btn_img APPbtn " style="isolation: isolate;  background-color: #0077ff; border-color: #0077ff;" onclick="visFunction()">APPLIED</button>
+                        <button type="button" id="APPbtn" class="btn btn-primary events_btn_img APPbtn "
+                            style="isolation: isolate;  background-color: #0077ff; border-color: #0077ff;"
+                            onclick="visFunction()">APPLIED</button>
 
-                        <button type="button" disabled id="EXAMbtn" class="btn btn-primary events_btn_img EXAMbtn" style="isolation: isolate; background-color: #323335; border-color: #0077ff;" onclick="visFunction1()">EXAM</button>
+                        <button type="button" id="EXAMbtn" class="btn btn-primary events_btn_img EXAMbtn"
+                            style="isolation: isolate; background-color: #323335; border-color: #0077ff;"
+                            onclick="visFunction1()">EXAM</button>
 
-                        <button type="button"  disabled  id="PROJbtn" class="btn btn-primary events_btn_img PROJbtn" style="isolation: isolate; background-color: #323335; border-color: #0077ff;" onclick="visFunction2()">PROJECT</button>
+                        <button type="button" id="INTbtn" class="btn btn-primary events_btn_img INTbtn"
+                            style="isolation: isolate; background-color: #323335; border-color: #0077ff;"
+                            onclick="visFunction3()">INTERVIEW</button>
 
-                        <button type="button"  id="INTbtn" class="btn btn-primary events_btn_img INTbtn" style="isolation: isolate; background-color: #323335; border-color: #0077ff;" onclick="visFunction3()">INTERVIEW</button>
-
-                        <button type="button" id="RESbtn" class="btn btn-primary events_btn_img RESbtn" style="isolation: isolate; background-color: #323335; border-color: #0077ff; " onclick="visFunction4()">RESULT</button>
+                        <button type="button" id="RESbtn" class="btn btn-primary events_btn_img RESbtn"
+                            style="isolation: isolate; background-color: #323335; border-color: #0077ff; "
+                            onclick="visFunction4()">RESULT</button>
                     </div>
 
                 </div>
                 <!-- </div> -->
             </div>
             <div class="members container APPimg" id="APPimg">
-                <div class="card-columns col-10" style="position: relative; z-index: 99;">
-                    <div class="card"><%if(user.domain_1=="corporate"){%>
-                        <img class="card-img-top" src="/img/Layer 2.png "><%}%>
-                        <%if(user.domain_1=="web"){%>
-                              <img class="card-img-top " src="/img/Layer -1.png "><%}%>
-                              <%if(user.domain_1=="C_vision"){%>
-                                <img class="card-img-top " src="/img/Layer -2.png "><%}%>
-                                <%if(user.domain_1=="df"){%>
-                                    <img class="card-img-top " src="/img/Layer -3.png "><%}%>
-                                    <%if(user.domain_1=="fs"){%>
-                                        <img class="card-img-top " src="/img/Layer -4.png "><%}%>
-                        <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;"><%if(user.domain_1=="C_vision"){%>
-                                Computer vision
-                                <%}%>
-                                    <%if(user.domain_1=="corporate"){%>
-                                        Corporate
-                                        <%}%>
-                                            <%if(user.domain_1=="df"){%>
-                                                Design and Fabrication
-                                                <%}%>
-                                                    <%if(user.domain_1=="fs"){%>
-                                                        Flight System
-                                                        <%}%>
-                                                            <%if(user.domain_1=="web"){%>
-                                                                Web Development
-                                                                <%}%>
-                                                                    <%if(user.domain_1=="Creatives"){%>
-                                                                        Creatives
-                                                                        <%}%></strong></h5>
-                            <button data-toggle="modal" data-target="#myModalApplied" style="margin-bottom: 10px;" type="button" class="btn-style">View</button>
-                        </div>
+                <div class="card-columns card-deck col-sm-6 col-lg-12" style="position: relative; z-index: 99;">
+                    <div class="card col-lg-12">
+                        <%if(user.domain_1=="corporate"){%>
+                            <img class="card-img-top" src="/img/Layer 2.png ">
+                            <%}%>
+                                <%if(user.domain_1=="web"){%>
+                                    <img class="card-img-top " src="/img/Layer -1.png ">
+                                    <%}%>
+                                        <%if(user.domain_1=="app_dev"){%>
+                                            <img class="card-img-top " src="/img/Layer -2.png ">
+                                            <%}%>
+                                                <%if(user.domain_1=="ui"){%>
+                                                    <img class="card-img-top " src="/img/Layer -3.png ">
+                                                    <%}%>
+                                                        <%if(user.domain_1=="cyber"){%>
+                                                            <img class="card-img-top " src="/img/Layer -4.png ">
+                                                            <%}%>
+                                                                <div class="card-body"
+                                                                    style="display: flex; justify-content: center; flex-direction: column;">
+                                                                    <h5 class="card-title" style="text-align: center;">
+                                                                        <strong style="color: #323335;">
+                                                                            <%if(user.domain_1=="app_dev"){%>
+                                                                                App Development
+                                                                                <%}%>
+                                                                                    <%if(user.domain_1=="corporate"){%>
+                                                                                        Corporate
+                                                                                        <%}%>
+                                                                                            <%if(user.domain_1=="ui"){%>
+                                                                                                Ui & Ux
+                                                                                                <%}%>
+                                                                                                    <%if(user.domain_1=="cyber"){%>
+                                                                                                        Flight System
+                                                                                                        <%}%>
+                                                                                                            <%if(user.domain_1=="web"){%>
+                                                                                                                Web
+                                                                                                                Development
+                                                                                                                <%}%>
+                                                                                                                    <%if(user.domain_1=="Creatives"){%>
+                                                                                                                        Creatives
+                                                                                                                        <%}%>
+                                                                        </strong>
+                                                                    </h5>
+                                                                    <button data-toggle="modal"
+                                                                        data-target="#myModalApplied"
+                                                                        style="margin-bottom: 10px;" type="button"
+                                                                        class="btn-style">View</button>
+                                                                </div>
                     </div>
-                    <%if((user.domain_2!="N/A")&&(user.domain_1!=user.domain_2)){%>
-                    <div class="card">
-                        <%if(user.domain_2=="corporate"){%>
-                            <img class="card-img-top" src="/img/Layer 2.png "><%}%>
-                            <%if(user.domain_2=="web"){%>
-                                  <img class="card-img-top " src="/img/Layer -1.png "><%}%>
-                                  <%if(user.domain_2=="C_vision"){%>
-                                    <img class="card-img-top " src="/img/Layer -2.png "><%}%>
-                                    <%if(user.domain_2=="df"){%>
-                                        <img class="card-img-top " src="/img/Layer -3.png "><%}%>
-                                        <%if(user.domain_2=="fs"){%>
-                                            <img class="card-img-top " src="/img/Layer -4.png "><%}%>
-                        <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;"><%if(user.domain_2=="C_vision"){%>
-                                Computer vision
+                    <%if((user.domain_2!="N /A")&&(user.domain_1!=user.domain_2)){%>
+                        <div class="card col-lg-12">
+                            <%if(user.domain_2=="corporate"){%>
+                                <img class="card-img-top" src="/img/Layer 2.png ">
                                 <%}%>
-                                    <%if(user.domain_2=="corporate"){%>
-                                        Corporate
+                                    <%if(user.domain_2=="web"){%>
+                                        <img class="card-img-top " src="/img/Layer -1.png ">
                                         <%}%>
-                                            <%if(user.domain_2=="df"){%>
-                                                Design and Fabrication
+                                            <%if(user.domain_2=="app_dev"){%>
+                                                <img class="card-img-top " src="/img/Layer -2.png ">
                                                 <%}%>
-                                                    <%if(user.domain_2=="fs"){%>
-                                                        Flight System
+                                                    <%if(user.domain_2=="ui"){%>
+                                                        <img class="card-img-top " src="/img/Layer -3.png ">
                                                         <%}%>
-                                                            <%if(user.domain_2=="web"){%>
-                                                                Web Development
+                                                            <%if(user.domain_2=="cyber"){%>
+                                                                <img class="card-img-top " src="/img/Layer -4.png ">
                                                                 <%}%>
-                                                                    <%if(user.domain_2=="Creatives"){%>
-                                                                        Creatives
-                                                                        <%}%></strong></h5>
-                            <button data-toggle="modal" data-target="#myModalApplied" style="margin-bottom: 10px;" type="button" class="btn-style">View</button>
+                                                                    <div class="card-body"
+                                                                        style="display: flex; justify-content: center; flex-direction: column;">
+                                                                        <h5 class="card-title"
+                                                                            style="text-align: center;"><strong
+                                                                                style="color: #323335;">
+                                                                                <%if(user.domain_2=="app_dev"){%>
+                                                                                    App Development
+                                                                                    <%}%>
+                                                                                        <%if(user.domain_2=="corporate"){%>
+                                                                                            Corporate
+                                                                                            <%}%>
+                                                                                                <%if(user.domain_2=="ui"){%>
+                                                                                                    Ui & Ux
+                                                                                                    <%}%>
+                                                                                                        <%if(user.domain_2=="cyber"){%>
+                                                                                                            Flight
+                                                                                                            System
+                                                                                                            <%}%>
+                                                                                                                <%if(user.domain_2=="web"){%>
+                                                                                                                    Web
+                                                                                                                    Development
+                                                                                                                    <%}%>
+                                                                                                                        <%if(user.domain_2=="Creatives"){%>
+                                                                                                                            Creatives
+                                                                                                                            <%}%>
+                                                                            </strong></h5>
+                                                                        <button data-toggle="modal"
+                                                                            data-target="#myModalApplied"
+                                                                            style="margin-bottom: 10px;" type="button"
+                                                                            class="btn-style">View</button>
+                                                                    </div>
                         </div>
-                    </div>
                         <%}%>
-                    <div class="modal " id="myModalApplied">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Your Application</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <p>Name :
-                                        <%=user.name%>
-                                    </p>
-                                    <p>
-                                        department:
-                                        <%=user.department%>
-                                    </p>
-                                    <p>
-                                        Registration Number :
-                                        <%=user.reg%>
-                                    </p>
-                                    <p>
-                                        Year:
-                                        <%=user.year%>
-                                    </p>
-                                    <p>
-                                        Whatsapp Number:
-                                        <%=user.whatsapp_number%>
-                                    </p>
-                                    <p>
-                                        Phone Number:
-                                        <%=user.phone_number%>
-                                    </p>
-                                    <p>
-                                        Domain 1:
-                                        <%if(user.domain_1=="C_vision"){%>
-                                            Computer vision
-                                            <%}%>
-                                                <%if(user.domain_1=="corporate"){%>
-                                                    Corporate
+                            <div class="modal " id="myModalApplied">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Your Application</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Name :
+                                                <%=user.name%>
+                                            </p>
+                                            <p>
+                                                Phone Number:
+                                                <%=user.phone_number%>
+                                            </p>
+                                            <p>
+                                                Domain 1:
+                                                <%if(user.domain_1=="app_dev"){%>
+                                                    App Development
                                                     <%}%>
-                                                        <%if(user.domain_1=="df"){%>
-                                                            Design and Fabrication
+                                                        <%if(user.domain_1=="corporate"){%>
+                                                            Corporate
                                                             <%}%>
-                                                                <%if(user.domain_1=="fs"){%>
-                                                                    Flight System
+                                                                <%if(user.domain_1=="ui"){%>
+                                                                    Ui & Ux
                                                                     <%}%>
-                                                                        <%if(user.domain_1=="web"){%>
-                                                                            Web Development
+                                                                        <%if(user.domain_1=="cyber"){%>
+                                                                            Flight System
                                                                             <%}%>
-                                                                                <%if(user.domain_1=="Creatives"){%>
-                                                                                    Creatives
+                                                                                <%if(user.domain_1=="web"){%>
+                                                                                    Web Development
                                                                                     <%}%>
-                                    </p>
-                                    <p>
-                                        Domain 2:
-                                        <%if(user.domain_2=="C_vision"){%>
-                                            Computer vision
-                                            <%}%>
-                                                <%if(user.domain_2=="corporate"){%>
-                                                    Corporate
+                                                                                       
+                                            </p>
+                                            <p>
+                                                Domain 2:
+                                                <%if(user.domain_2=="app_dev"){%>
+                                                    App Development
                                                     <%}%>
-                                                        <%if(user.domain_2=="df"){%>
-                                                            Design and Fabrication
+                                                        <%if(user.domain_2=="corporate"){%>
+                                                            Corporate
                                                             <%}%>
-                                                                <%if(user.domain_2=="fs"){%>
-                                                                    Flight System
+                                                                <%if(user.domain_2=="ui"){%>
+                                                                    Ui & Ux
                                                                     <%}%>
-                                                                        <%if(user.domain_2=="web"){%>
-                                                                            Web Development
+                                                                        <%if(user.domain_2=="cyber"){%>
+                                                                            Flight System
                                                                             <%}%>
-                                                                                <%if(user.domain_2=="Creatives"){%>
-                                                                                    Creatives
+                                                                                <%if(user.domain_2=="web"){%>
+                                                                                    Web Development
                                                                                     <%}%>
-                                    </p>
-                                </div>
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="mod_btn" data-dismiss="modal" style="margin-bottom: 20px;">Continue</button>
+                                                                                        <%if(user.domain_2=="Creatives"){%>
+                                                                                            Creatives
+                                                                                            <%}%>
+                                            </p>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="mod_btn" data-dismiss="modal"
+                                                style="margin-bottom: 20px;">Continue</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="members container EXAMimg" id="EXAMimg">
-                <div class="card-columns col-10" style="position: relative; z-index: 99;">
+                <div class="card-columns card-deck col-sm-6 col-lg-12" style="position: relative; z-index: 99;">
                     <div class="card">
                         <img class="card-img-top" src="/img/test.png">
                         <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;"> <%if(user.domain_1=="C_vision"){%>
-                                Computer vision
-                                <%}%>
-                                    <%if(user.domain_1=="corporate"){%>
-                                        Corporate
+                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;">
+                                    <%if(user.domain_1=="app_dev"){%>
+                                        App Development
                                         <%}%>
-                                            <%if(user.domain_1=="df"){%>
-                                                Design and Fabrication
+                                            <%if(user.domain_1=="corporate"){%>
+                                                Corporate
                                                 <%}%>
-                                                    <%if(user.domain_1=="fs"){%>
-                                                        Flight System
+                                                    <%if(user.domain_1=="ui"){%>
+                                                        Ui & Ux
                                                         <%}%>
-                                                            <%if(user.domain_1=="web"){%>
-                                                                Web Development
+                                                            <%if(user.domain_1=="cyber"){%>
+                                                                Flight System
                                                                 <%}%>
-                                                                    <%if(user.domain_1=="Creatives"){%>
-                                                                        Creatives
-                                                                        <%}%> & <%if(user.domain_2!="N/A"){%> <%if(user.domain_2=="C_vision"){%>
-                                                                            Computer vision
-                                                                            <%}%>
-                                                                                <%if(user.domain_2=="corporate"){%>
-                                                                                    Corporate
-                                                                                    <%}%>
-                                                                                        <%if(user.domain_2=="df"){%>
-                                                                                            Design and Fabrication
-                                                                                            <%}%>
-                                                                                                <%if(user.domain_2=="fs"){%>
-                                                                                                    Flight System
-                                                                                                    <%}%>
-                                                                                                        <%if(user.domain_2=="web"){%>
-                                                                                                            Web Development
-                                                                                                            <%}%>
-                                                                                                                <%if(user.domain_2=="Creatives"){%>
-                                                                                                                    Creatives
-                                                                                                                    <%}%><%}%></strong>
+                                                                    <%if(user.domain_1=="web"){%>
+                                                                        Web Development
+                                                                        <%}%>
+                                                                            <%if(user.domain_1=="Creatives"){%>
+                                                                                Creatives
+                                                                                <%}%>
+                                </strong>
                             </h5>
                             <h5 style="text-align: center;">Exam on 22/01/2021</h5>
                             <h5 style="text-align: center;">18:00PM IST</h5>
-                             <a href="/choose/<%=id%>" class="btn-style">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take Test</a> 
+                            <a href="/choose/<%=id%>" class="btn-style">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take Test</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/img/test.png">
+                        <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
+                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;">
+                                   <%if(user.domain_2!="N /A"){%>
+                                                                                        <%if(user.domain_2=="app_dev"){%>
+                                                                                            App Development
+                                                                                            <%}%>
+                                                                                                <%if(user.domain_2=="corporate"){%>
+                                                                                                    Corporate
+                                                                                                    <%}%>
+                                                                                                        <%if(user.domain_2=="ui"){%>
+                                                                                                            Ui & Ux
+                                                                                                            <%}%>
+                                                                                                                <%if(user.domain_2=="cyber"){%>
+                                                                                                                    Flight
+                                                                                                                    System
+                                                                                                                    <%}%>
+                                                                                                                        <%if(user.domain_2=="web"){%>
+                                                                                                                            Web
+                                                                                                                            Development
+                                                                                                                            <%}%>
+                                                                                                                                <%if(user.domain_2=="Creatives"){%>
+                                                                                                                                    Creatives
+                                                                                                                                    <%}%>
+                                                                                                                                        <%}%>
+                                </strong>
+                            </h5>
+                            <h5 style="text-align: center;">Exam on 22/01/2021</h5>
+                            <h5 style="text-align: center;">18:00PM IST</h5>
+                            <a href="/choose/<%=id%>" class="btn-style">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take Test</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="members container PROJimg" id="PROJimg">
-                <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-                    <div class="card-columns col-10" style="position: relative; z-index: 99;">
-                        <div class="card">
-                            <img class="card-img-top" src="/img/Layer -1.png">
-                            <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                                <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;">UI/UX</strong>
-                                </h5>
-                                <h5 style="text-align: center;">Submit Before 30th Jan</h5>
-                                <h5 style="text-align: center;">18:00PM IST</h5>
-                                <button type="button" data-toggle="modal" data-target="#myModal_ui" style="margin-bottom: 5px;" class="btn-style">view Details</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/img/Layer -1.png">
-                            <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                                <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;">Front-end</strong>
-                                </h5>
-                                <h5 style="text-align: center;">Submit Before 30th Jan</h5>
-                                <h5 style="text-align: center;">18:00PM IST</h5>
-                                <button type="button" data-toggle="modal" data-target="#myModal_front" style="margin-bottom: 5px;" class="btn-style">view Details</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="/img/Layer -1.png">
-                            <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                                <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;">Back-end</strong>
-                                </h5>
-                                <h5 style="text-align: center;">Submit Before 30th Jan</h5>
-                                <h5 style="text-align: center;">18:00PM IST</h5>
-                                <button class="btn-style" type="button" data-toggle="modal" data-target="#myModal_back" style="margin-bottom: 5px;">view Details</button>
-                            </div>
-                        </div>
-                        
-                        <div class="modal fade" id="myModal_ui">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Your Project</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <h5>First year:</h5><br>
-                                        <h6>Create a login and sign up page containing at least 2-3 seceens. Use any protoptying or graphic designing software to make the mockups ( For eg - Adobe XD ). Transitions in the prototype would be a great plus point.
-                                            Use you own original ideas and elements for the design</h6><br>
-                                        <h5>Second year:</h5><br>
-                                        <h6>Create a simple e-commerce website with 3-4 screens . Use any protoptying or graphic designing software to make the mockups ( For eg - Adobe XD ). Transitions in the prototype would be a great plus point. Use you
-                                            own original ideas and elements for the design</h6><br>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="mod_btn" data-dismiss="modal" style="margin-bottom: 20px;">Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="myModal_front">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Your Project</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <h5>First year:</h5><br>
-                                        <h6>Create a Portfolio website of you</h6><br>
-                                        <h5>Second year:</h5><br>
-                                        <h6> https://www.dji.com/ Recreate this page u can modify the elements and styles, impress us</h6>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="mod_btn" data-dismiss="modal" style="margin-bottom: 20px;">Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="myModal_back">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Your Project</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <h5>First year:</h5><br>
-                                        <h6>Create a login and sign up page containing at least 2-3 seceens. </h6><br>
-                                        <h5>Second year:</h5><br>
-                                        <h6>Create a OTP validation system from the email id given by the user during page registration.</h6><br>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="mod_btn" data-dismiss="modal" style="margin-bottom: 20px;">Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <form id="proj" action="/assignment/<%=id%>" method="POST">
-                        <input name="Assignment1" placeholder="Provide your link here" id="projectupload">
-                        <button id="projectupload_btn" type="submit" class="button" style="align-items: center;">Upload Link</button>
-                    </form>
-                    <br><br>
-                    <h5 id="ps">P.S. Provide your Project GitHub link for front-end/backend and Adobe XD link for UI in the above column.</h5>
-                    <%}%>
-                        <%if((user.domain_1!="web")&&(user.domain_2!="web")){%>
-                            <div class="card-columns col-10" style="position: relative; z-index: 99;">
-                                <div class="card">
-                                    <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                                        <h5 style="text-align: center;">Move on to Interview</h5>
-                                        <h5 style="text-align: center;">Projects only for Web-development</h5>
-                                        <button type="button" onclick="visFunction3()" class="btn-style ">Interview</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <%}%>
-                                
             </div>
             <div class="members container INTimg" id="INTimg">
                 <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-                <div class="card-columns col-10" style="position: relative; z-index: 99;">
-                    <div class="card">
-                        <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-                                  <img class="card-img-top " src="/img/Layer -1.png "><%}%>
-                        <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;">
-                                <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-                                                                Web Development
+                    <div class="card-columns card-deck col-sm-6 col-lg-12" style="position: relative; z-index: 99;">
+                        <div class="card">
+                            <%if(user.domain_1=="corporate"){%>
+                                <img class="card-img-top" src="/img/Layer 2.png ">
+                                <%}%>
+                                    <%if(user.domain_1=="web"){%>
+                                        <img class="card-img-top " src="/img/Layer -1.png ">
+                                        <%}%>
+                                            <%if(user.domain_1=="app_dev"){%>
+                                                <img class="card-img-top " src="/img/Layer -2.png ">
+                                                <%}%>
+                                                    <%if(user.domain_1=="ui"){%>
+                                                        <img class="card-img-top " src="/img/Layer -3.png ">
+                                                        <%}%>
+                                                            <%if(user.domain_1=="cyber"){%>
+                                                                <img class="card-img-top " src="/img/Layer -4.png ">
                                                                 <%}%>
-                                                                    </strong></h5>
-                                                                     
-                                                                    <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-                                                                                                            
-                                                                                                                <form action="/dandt/<%=id%>" method="POST">
-                                                                                                                    <select name="date">
-                                                                                                                    <option value="<%=web[0].d1%>"><%=web[0].d1%></option>
-                                                                                                                    <option value="<%=web[0].d2%>"><%=web[0].d2%></option>
-                                                                                                                    <option value="<%=web[0].d3%>"><%=web[0].d3%></option>
-                                                                                                                  </select>
-                                                                                                                    <select name="time">
-                                                                                                                    <option value="<%=web[0].t1%>"><%=web[0].t1%></option>
-                                                                                                                    <option value="<%=web[0].t2%>"><%=web[0].t2%></option>
-                                                                                                                    <option value="<%=web[0].t3%>"><%=web[0].t3%></option>
-                                                                                                                    <option value="<%=web[0].t4%>"><%=web[0].t4%></option>
-                                                                                                                    <option value="<%=web[0].t5%>"><%=web[0].t5%></option>
-                                                                                                                    <option value="<%=web[0].t6%>"><%=web[0].t6%></option>
-                                                                                                                  </select>
-                                                                                                                    <button class="btn-style">Book Slot</button>
-                                                                                                                </form>
-                                                                                                            
-                                                                                                            <%}%>
+                                    <div class="card-body"
+                                        style="display: flex; justify-content: center; flex-direction: column;">
+                                        <h5 class="card-title" style="text-align: center;"><strong
+                                                style="color: #323335;">
+                                                <%if(user.domain_1=="app_dev"){%>
+                                                    App Development
+                                                    <%}%>
+                                                        <%if(user.domain_1=="corporate"){%>
+                                                            Corporate
+                                                            <%}%>
+                                                                <%if(user.domain_1=="ui"){%>
+                                                                    Ui & Ux
+                                                                    <%}%>
+                                                                        <%if(user.domain_1=="cyber"){%>
+                                                                            Flight System
+                                                                            <%}%>
+                                                                                <%if(user.domain_1=="web"){%>
+                                                                                    Web Development
+                                                                                    <%}%>
+                                            </strong></h5>
+
+                                        <%if((user.domain_1=="web")||user.domain_2=="web"){%>
+
+                                            <form action="/dandt/<%=id%>" method="POST">
+                                                <select name="date">
+                                                    <option value="<%=web[0].d1%>">
+                                                        <%=web[0].d1%>
+                                                    </option>
+                                                    <option value="<%=web[0].d2%>">
+                                                        <%=web[0].d2%>
+                                                    </option>
+                                                    <option value="<%=web[0].d3%>">
+                                                        <%=web[0].d3%>
+                                                    </option>
+                                                </select>
+                                                <select name="time">
+                                                    <option value="<%=web[0].t1%>">
+                                                        <%=web[0].t1%>
+                                                    </option>
+                                                    <option value="<%=web[0].t2%>">
+                                                        <%=web[0].t2%>
+                                                    </option>
+                                                    <option value="<%=web[0].t3%>">
+                                                        <%=web[0].t3%>
+                                                    </option>
+                                                    <option value="<%=web[0].t4%>">
+                                                        <%=web[0].t4%>
+                                                    </option>
+                                                    <option value="<%=web[0].t5%>">
+                                                        <%=web[0].t5%>
+                                                    </option>
+                                                    <option value="<%=web[0].t6%>">
+                                                        <%=web[0].t6%>
+                                                    </option>
+                                                </select>
+                                                <button class="btn-style">Book Slot</button>
+                                            </form>
+
+                                            <%}%>
+                                    </div>
                         </div>
+                        <%if((user.domain_2!="N /A")&&(user.domain_1!=user.domain_2)){%>
+                        <div class="card">
+                            <%if((user.domain_1=="web")||user.domain_2=="web"){%>
+                                <img class="card-img-top " src="/img/Layer -1.png ">
+                                <%}%>
+                                    <div class="card-body"
+                                        style="display: flex; justify-content: center; flex-direction: column;">
+                                        <h5 class="card-title" style="text-align: center;"><strong
+                                                style="color: #323335;">
+                                                <%if((user.domain_1=="web")||user.domain_2=="web"){%>
+                                                    Web Development
+                                                    <%}%>
+                                            </strong></h5>
+
+                                        <%if((user.domain_1=="web")||user.domain_2=="web"){%>
+
+                                            <form action="/dandt/<%=id%>" method="POST">
+                                                <select name="date">
+                                                    <option value="<%=web[0].d1%>">
+                                                        <%=web[0].d1%>
+                                                    </option>
+                                                    <option value="<%=web[0].d2%>">
+                                                        <%=web[0].d2%>
+                                                    </option>
+                                                    <option value="<%=web[0].d3%>">
+                                                        <%=web[0].d3%>
+                                                    </option>
+                                                </select>
+                                                <select name="time">
+                                                    <option value="<%=web[0].t1%>">
+                                                        <%=web[0].t1%>
+                                                    </option>
+                                                    <option value="<%=web[0].t2%>">
+                                                        <%=web[0].t2%>
+                                                    </option>
+                                                    <option value="<%=web[0].t3%>">
+                                                        <%=web[0].t3%>
+                                                    </option>
+                                                    <option value="<%=web[0].t4%>">
+                                                        <%=web[0].t4%>
+                                                    </option>
+                                                    <option value="<%=web[0].t5%>">
+                                                        <%=web[0].t5%>
+                                                    </option>
+                                                    <option value="<%=web[0].t6%>">
+                                                        <%=web[0].t6%>
+                                                    </option>
+                                                </select>
+                                                <button class="btn-style">Book Slot</button>
+                                            </form>
+
+                                            <%}%>
+                                    </div>
+                        </div>
+                        <%}%>
                     </div>
-                </div>
+                    <%}%>
             </div>
             <div class="members container RESimg" id="RESimg">
-                <div class="card-columns col-10" style="position: relative; z-index: 99;">
+                <div class="card-columns card-deck col-sm-6 col-lg-12" style="position: relative; z-index: 99;">
                     <div class="card">
                         <%if(user.domain_1=="corporate"){%>
-                            <img class="card-img-top" src="/img/Layer 2.png "><%}%>
-                            <%if(user.domain_1=="web"){%>
-                                  <img class="card-img-top " src="/img/Layer -1.png "><%}%>
-                                  <%if(user.domain_1=="C_vision"){%>
-                                    <img class="card-img-top " src="/img/Layer -2.png "><%}%>
-                                    <%if(user.domain_1=="df"){%>
-                                        <img class="card-img-top " src="/img/Layer -3.png "><%}%>
-                                        <%if(user.domain_1=="fs"){%>
-                                            <img class="card-img-top " src="/img/Layer -4.png "><%}%>
-                        <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;"><%if(user.domain_1=="C_vision"){%>
-                                Computer vision
+                            <img class="card-img-top" src="/img/Layer 2.png ">
+                            <%}%>
+                                <%if(user.domain_1=="web"){%>
+                                    <img class="card-img-top " src="/img/Layer -1.png ">
+                                    <%}%>
+                                        <%if(user.domain_1=="app_dev"){%>
+                                            <img class="card-img-top " src="/img/Layer -2.png ">
+                                            <%}%>
+                                                <%if(user.domain_1=="ui"){%>
+                                                    <img class="card-img-top " src="/img/Layer -3.png ">
+                                                    <%}%>
+                                                        <%if(user.domain_1=="cyber"){%>
+                                                            <img class="card-img-top " src="/img/Layer -4.png ">
+                                                            <%}%>
+                                                                <div class="card-body"
+                                                                    style="display: flex; justify-content: center; flex-direction: column;">
+                                                                    <h5 class="card-title" style="text-align: center;">
+                                                                        <strong style="color: #323335;">
+                                                                            <%if(user.domain_1=="app_dev"){%>
+                                                                                App Development
+                                                                                <%}%>
+                                                                                    <%if(user.domain_1=="corporate"){%>
+                                                                                        Corporate
+                                                                                        <%}%>
+                                                                                            <%if(user.domain_1=="ui"){%>
+                                                                                                Ui & Ux
+                                                                                                <%}%>
+                                                                                                    <%if(user.domain_1=="cyber"){%>
+                                                                                                        Flight System
+                                                                                                        <%}%>
+                                                                                                            <%if(user.domain_1=="web"){%>
+                                                                                                                Web
+                                                                                                                Development
+                                                                                                                <%}%>
+
+                                                                        </strong>
+                                                                    </h5>
+                                                                    <button class="btn">
+                                                                        <%=user.selection_level%>
+                                                                    </button>
+                                                                </div>
+                    </div>
+                    <%if((user.domain_2!="N /A")&&(user.domain_1!=user.domain_2)){%>
+                        <div class="card">
+                            <%if(user.domain_2=="corporate"){%>
+                                <img class="card-img-top" src="/img/Layer 2.png ">
                                 <%}%>
-                                    <%if(user.domain_1=="corporate"){%>
-                                        Corporate
+                                    <%if(user.domain_2=="web"){%>
+                                        <img class="card-img-top " src="/img/Layer -1.png ">
                                         <%}%>
-                                            <%if(user.domain_1=="df"){%>
-                                                Design and Fabrication
+                                            <%if(user.domain_2=="app_dev"){%>
+                                                <img class="card-img-top " src="/img/Layer -2.png ">
                                                 <%}%>
-                                                    <%if(user.domain_1=="fs"){%>
-                                                        Flight System
+                                                    <%if(user.domain_2=="ui"){%>
+                                                        <img class="card-img-top " src="/img/Layer -3.png ">
                                                         <%}%>
-                                                            <%if(user.domain_1=="web"){%>
-                                                                Web Development
+                                                            <%if(user.domain_2=="cyber"){%>
+                                                                <img class="card-img-top " src="/img/Layer -4.png ">
                                                                 <%}%>
-                                                                    <%if(user.domain_1=="Creatives"){%>
-                                                                        Creatives
-                                                                        <%}%></strong></h5>
-                            <button class="btn"><%=user.selection_level%></button>
+                                                                    <div class="card-body"
+                                                                        style="display: flex; justify-content: center; flex-direction: column;">
+                                                                        <h5 class="card-title"
+                                                                            style="text-align: center;"><strong
+                                                                                style="color: #323335;">
+                                                                                <%if(user.domain_2=="app_dev"){%>
+                                                                                    App Development
+                                                                                    <%}%>
+                                                                                        <%if(user.domain_2=="corporate"){%>
+                                                                                            Corporate
+                                                                                            <%}%>
+                                                                                                <%if(user.domain_2=="ui"){%>
+                                                                                                    Ui & Ux
+                                                                                                    <%}%>
+                                                                                                        <%if(user.domain_2=="cyber"){%>
+                                                                                                            Cyber
+                                                                                                            Security
+                                                                                                            <%}%>
+                                                                                                                <%if(user.domain_2=="web"){%>
+                                                                                                                    Web
+                                                                                                                    Development
+                                                                                                                    <%}%>
+                                                                            </strong></h5>
+                                                                        <button class="btn">
+                                                                            <%=user.selection_level1%>
+                                                                        </button>
+                                                                    </div>
                         </div>
-                    </div><%if((user.domain_2!="N/A")&&(user.domain_1!=user.domain_2)){%>
-                    <div class="card">
-                        <%if(user.domain_2=="corporate"){%>
-                            <img class="card-img-top" src="/img/Layer 2.png "><%}%>
-                            <%if(user.domain_2=="web"){%>
-                                  <img class="card-img-top " src="/img/Layer -1.png "><%}%>
-                                  <%if(user.domain_2=="C_vision"){%>
-                                    <img class="card-img-top " src="/img/Layer -2.png "><%}%>
-                                    <%if(user.domain_2=="df"){%>
-                                        <img class="card-img-top " src="/img/Layer -3.png "><%}%>
-                                        <%if(user.domain_2=="fs"){%>
-                                            <img class="card-img-top " src="/img/Layer -4.png "><%}%>
-                        <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
-                            <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;"><%if(user.domain_2=="C_vision"){%>
-                                Computer vision
-                                <%}%>
-                                    <%if(user.domain_2=="corporate"){%>
-                                        Corporate
-                                        <%}%>
-                                            <%if(user.domain_2=="df"){%>
-                                                Design and Fabrication
-                                                <%}%>
-                                                    <%if(user.domain_2=="fs"){%>
-                                                        Flight System
-                                                        <%}%>
-                                                            <%if(user.domain_2=="web"){%>
-                                                                Web Development
-                                                                <%}%>
-                                                                    <%if(user.domain_2=="Creatives"){%>
-                                                                        Creatives
-                                                                        <%}%></strong></h5>
-                            <button class="btn"><%=user.selection_level1%></button>
-                        </div>
-                    </div><%}%>
+                        <%}%>
                 </div>
             </div>
+
         </div>
-        <%}else{%>
-            <p>This interview is only for Web-development</p>
-            <%}%>
+
     </div>
     <!-- ---------------------------------------------------------------------- -->
     <!-- -------------------------ANIMATION-------------------------------------------- -->
@@ -743,221 +821,59 @@
             </div>
         </div>
     </div>
-    <!-- ----------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxx--------------------------- -->
-    <!-- <div>
-    <h1>This is portal</h1>
-    <form action="/logout" method="POST">
-        <button>Logout</button>
-    </form>
-    <p>Name :
-        <%=user.name%>
-    </p>
-    <p>
-        department:
-        <%=user.department%>
-    </p>
-    <p>
-        Registration Number :
-        <%=user.reg%>
-    </p>
-    <p>
-        Year:
-        <%=user.year%>
-    </p>
-    <p>
-        Whatsapp Number:
-        <%=user.whatsapp_number%>
-    </p>
-    <p>
-        Phone Number:
-        <%=user.phone_number%>
-    </p>
-    <p>
-        Domain 1:
-        <%if(user.domain_1=="C_vision"){%>
-            Computer vision
-            <%}%>
-                <%if(user.domain_1=="corporate"){%>
-                    Corporate
-                    <%}%>
-                        <%if(user.domain_1=="df"){%>
-                            Design and Fabrication
-                            <%}%>
-                                <%if(user.domain_1=="fs"){%>
-                                    Flight System
-                                    <%}%>
-                                        <%if(user.domain_1=="web"){%>
-                                            Web Development
-                                            <%}%>
-                                                <%if(user.domain_1=="Creatives"){%>
-                                                    Creatives
-                                                    <%}%>
-    </p>
-    <p>
-        Domain 2:
-        <%if(user.domain_2=="C_vision"){%>
-            Computer vision
-            <%}%>
-                <%if(user.domain_2=="corporate"){%>
-                    Corporate
-                    <%}%>
-                        <%if(user.domain_2=="df"){%>
-                            Design and Fabrication
-                            <%}%>
-                                <%if(user.domain_2=="fs"){%>
-                                    Flight System
-                                    <%}%>
-                                        <%if(user.domain_2=="web"){%>
-                                            Web Development
-                                            <%}%>
-                                                <%if(user.domain_2=="Creatives"){%>
-                                                    Creatives
-                                                    <%}%>
-    </p>
-    
-    <%if(user.domain_1=="Creatives"||user.domain_2=="Creatives"){%>
-        <h2>Select the Domains</h2>
-        <p>
-            behance :
-            <a href="<%=user.behance%>">
-                <%=user.behance%>
-            </a>
-        </p>
-        <p>
-            dribble :
-            <a href="<%=user.dribble%>">
-                <%=user.dribble%>
-            </a>
-        </p>
-        <p>
-            medium :
-            <a href="<%=user.medium%>">
-                <%=user.medium%>
-            </a>
-        </p>
-        <%}%>
-            <%if(user.domain_1=="fs"||user.domain_2=="fs"||user.domain_1=="C_vision"||user.domain_2=="C_vision"||user.domain_1=="web"||user.domain_2=="web"){%>
-                github :
-                <a href="<%=user.github%>">
-                    <%=user.github%>
-                </a>
-                <%}%>
-                <%if(user.domain_1=="Creatives"||user.domain_1=="fs"||user.domain_1=="Corporate"||user.domain_1=="web"||user.domain_1=="df"||user.domain_1=="C_vision"){%>
-                    <p>
-                        linkedin :
-                        <a href="<%=user.linkedin%>">
-                            <%=user.linkedin%>
-                        </a>
-                    </p>
-                <%}%>
-            
-                    <hr>
-                    <%if(user.linkedin==""){%>
-                    <h2>Edit the Links</h2>
-                    <%if(user.domain_1==""&&user.domain_2==""){%>
-                        <form action="/domain/<%=id%>" method="POST">
-                            Domain 1 :
-                            <select name="domain_1">
-            <option value="C_vision">Computer Vision</option>
-            <option value="corporate">Corporate</option>
-            <option value="df">Design and fabrication</option>
-            <option value="fs">Flight Systems</option>
-            <option value="web">Web Development</option>
-            <option value="Creatives">Creatives</option>
-        </select> Domain 2 :
-                            <select name="domain_2">
-            <option value="N/A">Not Applicable</option>
-            <option value="C_vision">Computer Vision</option>
-            <option value="corporate">Corporate</option>
-            <option value="df">Design and fabrication</option>
-            <option value="fs">Flight Systems</option>
-            <option value="web">Web Development</option>
-            <option value="Creatives">Creatives</option>
-        </select>
-                            <button>Submit</button>
-                        </form>
-                        <%}%>             
-                            <%if(user.domain_1 != "")
-                            {%>
-                                <form action="/someMore0/<%=id%>" method="POST">
-                                    <input type="text" name="linkedin" placeholder="linkedin">
-                                    <button>Submit</button>
-                                </form>
-                            <%}%>
-                            <%if(user.domain_1=="Creatives"||user.domain_2=="Creatives"){%>
-                                <form action="/someMore1/<%=id%>" method="POST">
-                                    <input type="text" name="behance" placeholder="behance">
-                                    <input type="text" name="dribble" placeholder="dribble">
-                                    <input type="text" name="medium" placeholder="medium">
-                                    <button>Submit</button>
-                                </form>
-                                <%}%>
-                                    <%if(user.domain_1=="fs"||user.domain_2=="fs"||user.domain_1=="C_vision"||user.domain_2=="C_vision"||user.domain_1=="web"||user.domain_2=="web"){%>
-                                        <form action="/someMore2/<%=id%>" method="POST">
-                                            <input type="text" name="github" placeholder="github" value="<%=user.github%>">
-                                            <button>Submit</button>
-                                        </form>
-                                        <%}%>
-                        <%}%>
-                                            <%=fs[0].time1%>
-                                                <%=web[0].level1%>
-                                                    <%=corporate[0].level1%>
-    </div> -->
     <!-- -------------------------CONTACT & LOGOUT------------------------------------------------ -->
     <div id="contact">
         <button class="open-button button" onclick="openForm()">Contact Us</button>
         <div class="chat-popup form-container" id="myForm">
             <h2>Contact us</h2>
-            <a  href = "mailto: communications@srmscro.com"><button type="button" class="button">Send Email</button></a>
+            <a href="mailto: communications@gmail.com"><button type="button" class="button">Send Email</button></a>
             <br><a href="tel:7778951101"><button class="button" type="button">Call Us</button></a>
             <br><button class="button" type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </div>
     </div>
     <div id="logout">
         <form action="/logout" method="POST">
-            <button>  <a>
-            <img src="/img/logout.svg">
-        </a>
-    </button>
+            <button> <a>
+                    <img src="/img/logout.svg">
+                </a>
+            </button>
         </form>
     </div>
     <!-- -------------------------------------------------------------------------------- -->
     <script>
-        function vis1(){
+        function vis1() {
             document.getElementById("dashboard").style.display = "block";
             document.getElementById("app_details").style.display = "none";
             document.getElementById("stat_app").style.display = "none";
-            document.getElementById("deadline").style.display = "none";
         }
-        function vis2(){
+        function vis2() {
             document.getElementById("dashboard").style.display = "none";
             document.getElementById("app_details").style.display = "block";
             document.getElementById("stat_app").style.display = "none";
-            document.getElementById("deadline").style.display = "none";
         }
-        function vis3(){
+        function vis3() {
             document.getElementById("dashboard").style.display = "none";
             document.getElementById("app_details").style.display = "none";
             document.getElementById("stat_app").style.display = "block";
-            document.getElementById("deadline").style.display = "none";
         }
-        function vis4(){
+        function vis4() {
             document.getElementById("dashboard").style.display = "none";
             document.getElementById("app_details").style.display = "none";
             document.getElementById("stat_app").style.display = "none";
-            document.getElementById("deadline").style.display = "block";
         }
-        function openForm(){
+        function openForm() {
             document.getElementById("myForm").style.display = "block";
         }
-        function closeForm(){
+        function closeForm() {
             document.getElementById("myForm").style.display = "none";
         }
     </script>
     <script async type="text/javascript" src="/script/script.js"></script>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+</body>
+
 </html>

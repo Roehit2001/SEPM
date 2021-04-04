@@ -343,7 +343,7 @@ input{
   border: 0;
   border-radius: 40px;
   box-shadow: rgba(0, 191, 255, 0) 0 7px 5px;
-  width: 185px;
+  width: 250px;
   font-family: Montserrat Regular;
   z-index: -1;
 }
@@ -411,11 +411,7 @@ input{
   margin-top: 5%;
   -webkit-box-shadow: 0 0 0px #fff; 
    box-shadow: 0 0 0px rgb(141, 138, 138);
-  /* flex-direction: column; */
-  /* justify-content: center;
-  border-radius: 10px;
-  width: 10rem; */
-  /* min-width: 200px; */
+  min-height: 250px;
 }
 
 /* #dashboard{
