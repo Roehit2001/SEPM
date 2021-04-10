@@ -60,9 +60,7 @@
                     one-stop
                     all-in-all for everything related to XXXXX and your relationship
                     to the team in terms of customised events, results, updates and announcements.
-                    Make yourself at home at one of SRM’s foremost premier research teams - and sit with us and take a
-                    ride as you watch us navigate,
-                    conquer, explore and redefine.</p><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
                 <%if((user.domain_1!="")&&(user.linkedin=="")){%>
                     <p style="color: red;">Please go to application details and apply for your domains.</p>
                     <%}%><br>
@@ -151,7 +149,7 @@
                     <div class="card-deck col-sm-6 col-lg-12" style="margin-top: 5%; position: relative; z-index: 69; ">
                         <%if((user.domain_1=="corporate")||(user.domain_2=="corporate")){%>
                             <div class="card ">
-                                <img class="card-img-top" src="/img/Layer 2.png ">
+                                <img class="card-img-top" src="/img/corp.svg ">
                                 <div class="card-body"
                                     style="display: flex; justify-content: center; flex-direction: column; ">
                                     <h5 class="card-title" style="text-align: center;">CORPORATE</h5>
@@ -163,7 +161,7 @@
                             <%}%>
                                 <%if((user.domain_1=="web")||(user.domain_2=="web")){%>
                                     <div class="card ">
-                                        <img class="card-img-top " src="/img/Layer -1.png ">
+                                        <img class="card-img-top " src="/img/web.svg ">
                                         <div class="card-body "
                                             style="display: flex; justify-content: center; flex-direction: column; ">
                                             <h5 class="card-title " style="text-align: center; ">WEB DEVELOPMENT</h5>
@@ -175,7 +173,7 @@
                                     <%}%>
                                         <%if((user.domain_1=="app_dev")||(user.domain_2=="app_dev")){%>
                                             <div class="card ">
-                                                <img class="card-img-top " src="/img/Layer -2.png ">
+                                                <img class="card-img-top " src="/img/app.svg ">
                                                 <div class="card-body "
                                                     style="display: flex; justify-content: center; flex-direction: column; ">
                                                     <h5 class="card-title " style="text-align: center; ">App Development
@@ -188,7 +186,7 @@
                                             <%}%>
                                                 <%if((user.domain_1=="ui")||(user.domain_2=="ui")){%>
                                                     <div class="card ">
-                                                        <img class="card-img-top " src="/img/Layer -3.png ">
+                                                        <img class="card-img-top " src="/img/ui.svg ">
                                                         <div class="card-body "
                                                             style="display: flex; justify-content: center; flex-direction: column; ">
                                                             <h5 class="card-title " style="text-align: center; ">Ui & Ux
@@ -201,7 +199,7 @@
                                                     <%}%>
                                                         <%if((user.domain_1=="cyber")||(user.domain_2=="cyber")){%>
                                                             <div class="card ">
-                                                                <img class="card-img-top " src="/img/Layer -4.png ">
+                                                                <img class="card-img-top " src="/img/cyber.svg ">
                                                                 <div class="card-body "
                                                                     style="display: flex; justify-content: center; flex-direction: column; ">
                                                                     <h5 class="card-title "
@@ -314,19 +312,19 @@
                 <div class="card-columns card-deck col-sm-6 col-lg-12" style="position: relative; z-index: 99;">
                     <div class="card col-lg-12">
                         <%if(user.domain_1=="corporate"){%>
-                            <img class="card-img-top" src="/img/Layer 2.png ">
+                            <img class="card-img-top"  src="/img/corp.svg ">
                             <%}%>
                                 <%if(user.domain_1=="web"){%>
-                                    <img class="card-img-top " src="/img/Layer -1.png ">
+                                    <img class="card-img-top" src="/img/web.svg ">
                                     <%}%>
                                         <%if(user.domain_1=="app_dev"){%>
-                                            <img class="card-img-top " src="/img/Layer -2.png ">
+                                            <img class="card-img-top " src="/img/app.svg ">
                                             <%}%>
                                                 <%if(user.domain_1=="ui"){%>
-                                                    <img class="card-img-top " src="/img/Layer -3.png ">
+                                                    <img class="card-img-top " src="/img/ui.svg ">
                                                     <%}%>
                                                         <%if(user.domain_1=="cyber"){%>
-                                                            <img class="card-img-top " src="/img/Layer -4.png ">
+                                                            <img class="card-img-top " src="/img/cyber.svg ">
                                                             <%}%>
                                                                 <div class="card-body"
                                                                     style="display: flex; justify-content: center; flex-direction: column;">
@@ -359,22 +357,22 @@
                                                                         class="btn-style">View</button>
                                                                 </div>
                     </div>
-                    <%if((user.domain_2!="N /A")&&(user.domain_1!=user.domain_2)){%>
+                    <%if((user.domain_2!="N/A")&&(user.domain_1!=user.domain_2)){%>
                         <div class="card col-lg-12">
                             <%if(user.domain_2=="corporate"){%>
-                                <img class="card-img-top" src="/img/Layer 2.png ">
+                                <img class="card-img-top" src="/img/corp.svg ">
                                 <%}%>
                                     <%if(user.domain_2=="web"){%>
-                                        <img class="card-img-top " src="/img/Layer -1.png ">
+                                        <img class="card-img-top " src="/img/web.svg ">
                                         <%}%>
                                             <%if(user.domain_2=="app_dev"){%>
-                                                <img class="card-img-top " src="/img/Layer -2.png ">
+                                                <img class="card-img-top " src="/img/app.svg ">
                                                 <%}%>
                                                     <%if(user.domain_2=="ui"){%>
-                                                        <img class="card-img-top " src="/img/Layer -3.png ">
+                                                        <img class="card-img-top " src="/img/ui.svg ">
                                                         <%}%>
                                                             <%if(user.domain_2=="cyber"){%>
-                                                                <img class="card-img-top " src="/img/Layer -4.png ">
+                                                                <img class="card-img-top " src="/img/cyber.svg ">
                                                                 <%}%>
                                                                     <div class="card-body"
                                                                         style="display: flex; justify-content: center; flex-direction: column;">
@@ -391,8 +389,7 @@
                                                                                                     Ui & Ux
                                                                                                     <%}%>
                                                                                                         <%if(user.domain_2=="cyber"){%>
-                                                                                                            Flight
-                                                                                                            System
+                                                                                                            Flight System
                                                                                                             <%}%>
                                                                                                                 <%if(user.domain_2=="web"){%>
                                                                                                                     Web
@@ -513,7 +510,7 @@
                         <img class="card-img-top" src="/img/test.png">
                         <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;">
                             <h5 class="card-title" style="text-align: center;"><strong style="color: #323335;">
-                                   <%if(user.domain_2!="N /A"){%>
+                                   <%if(user.domain_2!="N/A"){%>
                                                                                         <%if(user.domain_2=="app_dev"){%>
                                                                                             App Development
                                                                                             <%}%>
@@ -546,23 +543,23 @@
                 </div>
             </div>
             <div class="members container INTimg" id="INTimg">
-                <%if((user.domain_1=="web")||user.domain_2=="web"){%>
                     <div class="card-columns card-deck col-sm-6 col-lg-12" style="position: relative; z-index: 99;">
+                        
                         <div class="card">
                             <%if(user.domain_1=="corporate"){%>
-                                <img class="card-img-top" src="/img/Layer 2.png ">
+                                <img class="card-img-top" src="/img/corp.svg ">
                                 <%}%>
                                     <%if(user.domain_1=="web"){%>
-                                        <img class="card-img-top " src="/img/Layer -1.png ">
+                                        <img class="card-img-top " src="/img/web.svg ">
                                         <%}%>
                                             <%if(user.domain_1=="app_dev"){%>
-                                                <img class="card-img-top " src="/img/Layer -2.png ">
+                                                <img class="card-img-top " src="/img/app.svg ">
                                                 <%}%>
                                                     <%if(user.domain_1=="ui"){%>
-                                                        <img class="card-img-top " src="/img/Layer -3.png ">
+                                                        <img class="card-img-top " src="/img/ui.svg ">
                                                         <%}%>
                                                             <%if(user.domain_1=="cyber"){%>
-                                                                <img class="card-img-top " src="/img/Layer -4.png ">
+                                                                <img class="card-img-top " src="/img/cyber.svg ">
                                                                 <%}%>
                                     <div class="card-body"
                                         style="display: flex; justify-content: center; flex-direction: column;">
@@ -584,9 +581,9 @@
                                                                                     Web Development
                                                                                     <%}%>
                                             </strong></h5>
-
-                                        <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-
+                                            <%if(user.day==""){%>
+                                        <%if(user.domain_1=="web"){%>
+                                            
                                             <form action="/dandt/<%=id%>" method="POST">
                                                 <select name="date">
                                                     <option value="<%=web[0].d1%>">
@@ -623,23 +620,204 @@
                                             </form>
 
                                             <%}%>
+                                            <%if(user.domain_1=="app_dev"){%>
+
+                                                <form action="/dandt/<%=id%>" method="POST">
+                                                    <select name="date">
+                                                        <option value="<%=app_dev[0].d1%>">
+                                                            <%=app_dev[0].d1%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].d2%>">
+                                                            <%=app_dev[0].d2%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].d3%>">
+                                                            <%=app_dev[0].d3%>
+                                                        </option>
+                                                    </select>
+                                                    <select name="time">
+                                                        <option value="<%=app_dev[0].t1%>">
+                                                            <%=app_dev[0].t1%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t2%>">
+                                                            <%=app_dev[0].t2%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t3%>">
+                                                            <%=app_dev[0].t3%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t4%>">
+                                                            <%=app_dev[0].t4%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t5%>">
+                                                            <%=app_dev[0].t5%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t6%>">
+                                                            <%=app_dev[0].t6%>
+                                                        </option>
+                                                    </select>
+                                                    <button class="btn-style">Book Slot</button>
+                                                </form>
+    
+                                                <%}%>
+                                                <%if(user.domain_1=="cyber"){%>
+
+                                                    <form action="/dandt/<%=id%>" method="POST">
+                                                        <select name="date">
+                                                            <option value="<%=cyber[0].d1%>">
+                                                                <%=cyber[0].d1%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].d2%>">
+                                                                <%=cyber[0].d2%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].d3%>">
+                                                                <%=cyber[0].d3%>
+                                                            </option>
+                                                        </select>
+                                                        <select name="time">
+                                                            <option value="<%=cyber[0].t1%>">
+                                                                <%=cyber[0].t1%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t2%>">
+                                                                <%=cyber[0].t2%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t3%>">
+                                                                <%=cyber[0].t3%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t4%>">
+                                                                <%=cyber[0].t4%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t5%>">
+                                                                <%=cyber[0].t5%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t6%>">
+                                                                <%=cyber[0].t6%>
+                                                            </option>
+                                                        </select>
+                                                        <button class="btn-style">Book Slot</button>
+                                                    </form>
+        
+                                                    <%}%>
+                                                    <%if(user.domain_1=="ui"){%>
+
+                                                        <form action="/dandt/<%=id%>" method="POST">
+                                                            <select name="date">
+                                                                <option value="<%=ui[0].d1%>">
+                                                                    <%=ui[0].d1%>
+                                                                </option>
+                                                                <option value="<%=ui[0].d2%>">
+                                                                    <%=ui[0].d2%>
+                                                                </option>
+                                                                <option value="<%=ui[0].d3%>">
+                                                                    <%=ui[0].d3%>
+                                                                </option>
+                                                            </select>
+                                                            <select name="time">
+                                                                <option value="<%=ui[0].t1%>">
+                                                                    <%=ui[0].t1%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t2%>">
+                                                                    <%=ui[0].t2%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t3%>">
+                                                                    <%=ui[0].t3%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t4%>">
+                                                                    <%=ui[0].t4%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t5%>">
+                                                                    <%=ui[0].t5%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t6%>">
+                                                                    <%=ui[0].t6%>
+                                                                </option>
+                                                            </select>
+                                                            <button class="btn-style">Book Slot</button>
+                                                        </form>
+            
+                                                        <%}%>
+                                                        <%if(user.domain_1=="corporate"){%>
+
+                                                            <form action="/dandt/<%=id%>" method="POST">
+                                                                <select name="date">
+                                                                    <option value="<%=corporate[0].d1%>">
+                                                                        <%=corporate[0].d1%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].d2%>">
+                                                                        <%=corporate[0].d2%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].d3%>">
+                                                                        <%=corporate[0].d3%>
+                                                                    </option>
+                                                                </select>
+                                                                <select name="time">
+                                                                    <option value="<%=corporate[0].t1%>">
+                                                                        <%=corporate[0].t1%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t2%>">
+                                                                        <%=corporate[0].t2%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t3%>">
+                                                                        <%=corporate[0].t3%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t4%>">
+                                                                        <%=corporate[0].t4%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t5%>">
+                                                                        <%=corporate[0].t5%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t6%>">
+                                                                        <%=corporate[0].t6%>
+                                                                    </option>
+                                                                </select>
+                                                                <button class="btn-style">Book Slot</button>
+                                                            </form>
+                
+                                                            <%}%>
+                                                            <%}else{%>
+                                                                <p>Interview Day: <%=user.day%></p>
+                                                                <p>Interview Time: <%=user.time%></p>
+                                                                <%}%>
                                     </div>
                         </div>
-                        <%if((user.domain_2!="N /A")&&(user.domain_1!=user.domain_2)){%>
+                        
+                        <%if((user.domain_2!="N/A")&&(user.domain_1!=user.domain_2)){%>
                         <div class="card">
-                            <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-                                <img class="card-img-top " src="/img/Layer -1.png ">
+                            <%if(user.domain_2=="corporate"){%>
+                                <img class="card-img-top" src="/img/corp.svg ">
                                 <%}%>
+                                    <%if(user.domain_2=="web"){%>
+                                        <img class="card-img-top " src="/img/web.svg ">
+                                        <%}%>
+                                            <%if(user.domain_2=="app_dev"){%>
+                                                <img class="card-img-top " src="/img/app.svg ">
+                                                <%}%>
+                                                    <%if(user.domain_2=="ui"){%>
+                                                        <img class="card-img-top " src="/img/ui.svg ">
+                                                        <%}%>
+                                                            <%if(user.domain_2=="cyber"){%>
+                                                                <img class="card-img-top " src="/img/cyber.svg ">
+                                                                <%}%>
                                     <div class="card-body"
                                         style="display: flex; justify-content: center; flex-direction: column;">
                                         <h5 class="card-title" style="text-align: center;"><strong
                                                 style="color: #323335;">
-                                                <%if((user.domain_1=="web")||user.domain_2=="web"){%>
-                                                    Web Development
+                                                <%if(user.domain_2=="app_dev"){%>
+                                                    App Development
                                                     <%}%>
+                                                        <%if(user.domain_2=="corporate"){%>
+                                                            Corporate
+                                                            <%}%>
+                                                                <%if(user.domain_2=="ui"){%>
+                                                                    Ui & Ux
+                                                                    <%}%>
+                                                                        <%if(user.domain_2=="cyber"){%>
+                                                                            Flight System
+                                                                            <%}%>
+                                                                                <%if(user.domain_2=="web"){%>
+                                                                                    Web Development
+                                                                                    <%}%>
                                             </strong></h5>
-
-                                        <%if((user.domain_1=="web")||user.domain_2=="web"){%>
+                                            <%if(user.day1==""){%>
+                                        <%if(user.domain_2=="web"){%>
 
                                             <form action="/dandt/<%=id%>" method="POST">
                                                 <select name="date">
@@ -677,29 +855,184 @@
                                             </form>
 
                                             <%}%>
+                                            <%if(user.domain_2=="app_dev"){%>
+
+                                                <form action="/dandt/<%=id%>" method="POST">
+                                                    <select name="date">
+                                                        <option value="<%=app_dev[0].d1%>">
+                                                            <%=app_dev[0].d1%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].d2%>">
+                                                            <%=app_dev[0].d2%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].d3%>">
+                                                            <%=app_dev[0].d3%>
+                                                        </option>
+                                                    </select>
+                                                    <select name="time">
+                                                        <option value="<%=app_dev[0].t1%>">
+                                                            <%=app_dev[0].t1%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t2%>">
+                                                            <%=app_dev[0].t2%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t3%>">
+                                                            <%=app_dev[0].t3%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t4%>">
+                                                            <%=app_dev[0].t4%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t5%>">
+                                                            <%=app_dev[0].t5%>
+                                                        </option>
+                                                        <option value="<%=app_dev[0].t6%>">
+                                                            <%=app_dev[0].t6%>
+                                                        </option>
+                                                    </select>
+                                                    <button class="btn-style">Book Slot</button>
+                                                </form>
+    
+                                                <%}%>
+                                                <%if(user.domain_2=="cyber"){%>
+
+                                                    <form action="/dandt/<%=id%>" method="POST">
+                                                        <select name="date">
+                                                            <option value="<%=cyber[0].d1%>">
+                                                                <%=cyber[0].d1%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].d2%>">
+                                                                <%=cyber[0].d2%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].d3%>">
+                                                                <%=cyber[0].d3%>
+                                                            </option>
+                                                        </select>
+                                                        <select name="time">
+                                                            <option value="<%=cyber[0].t1%>">
+                                                                <%=cyber[0].t1%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t2%>">
+                                                                <%=cyber[0].t2%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t3%>">
+                                                                <%=cyber[0].t3%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t4%>">
+                                                                <%=cyber[0].t4%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t5%>">
+                                                                <%=cyber[0].t5%>
+                                                            </option>
+                                                            <option value="<%=cyber[0].t6%>">
+                                                                <%=cyber[0].t6%>
+                                                            </option>
+                                                        </select>
+                                                        <button class="btn-style">Book Slot</button>
+                                                    </form>
+        
+                                                    <%}%>
+                                                    <%if(user.domain_2=="ui"){%>
+
+                                                        <form action="/dandt/<%=id%>" method="POST">
+                                                            <select name="date">
+                                                                <option value="<%=ui[0].d1%>">
+                                                                    <%=ui[0].d1%>
+                                                                </option>
+                                                                <option value="<%=ui[0].d2%>">
+                                                                    <%=ui[0].d2%>
+                                                                </option>
+                                                                <option value="<%=ui[0].d3%>">
+                                                                    <%=ui[0].d3%>
+                                                                </option>
+                                                            </select>
+                                                            <select name="time">
+                                                                <option value="<%=ui[0].t1%>">
+                                                                    <%=ui[0].t1%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t2%>">
+                                                                    <%=ui[0].t2%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t3%>">
+                                                                    <%=ui[0].t3%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t4%>">
+                                                                    <%=ui[0].t4%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t5%>">
+                                                                    <%=ui[0].t5%>
+                                                                </option>
+                                                                <option value="<%=ui[0].t6%>">
+                                                                    <%=ui[0].t6%>
+                                                                </option>
+                                                            </select>
+                                                            <button class="btn-style">Book Slot</button>
+                                                        </form>
+            
+                                                        <%}%>
+                                                        <%if(user.domain_2=="corporate"){%>
+
+                                                            <form action="/dandt/<%=id%>" method="POST">
+                                                                <select name="date">
+                                                                    <option value="<%=corporate[0].d1%>">
+                                                                        <%=corporate[0].d1%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].d2%>">
+                                                                        <%=corporate[0].d2%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].d3%>">
+                                                                        <%=corporate[0].d3%>
+                                                                    </option>
+                                                                </select>
+                                                                <select name="time">
+                                                                    <option value="<%=corporate[0].t1%>">
+                                                                        <%=corporate[0].t1%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t2%>">
+                                                                        <%=corporate[0].t2%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t3%>">
+                                                                        <%=corporate[0].t3%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t4%>">
+                                                                        <%=corporate[0].t4%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t5%>">
+                                                                        <%=corporate[0].t5%>
+                                                                    </option>
+                                                                    <option value="<%=corporate[0].t6%>">
+                                                                        <%=corporate[0].t6%>
+                                                                    </option>
+                                                                </select>
+                                                                <button class="btn-style">Book Slot</button>
+                                                            </form>
+                
+                                                            <%}%>
+                                                            <%}else{%>
+                                                                <p>interview Day: <%=user.day1%></p>
+                                                                <p>interview Time: <%=user.time1%></p>
+                                                                <%}%>
                                     </div>
                         </div>
                         <%}%>
                     </div>
-                    <%}%>
             </div>
             <div class="members container RESimg" id="RESimg">
                 <div class="card-columns card-deck col-sm-6 col-lg-12" style="position: relative; z-index: 99;">
                     <div class="card">
                         <%if(user.domain_1=="corporate"){%>
-                            <img class="card-img-top" src="/img/Layer 2.png ">
+                            <img class="card-img-top" src="/img/corp.svg ">
                             <%}%>
                                 <%if(user.domain_1=="web"){%>
-                                    <img class="card-img-top " src="/img/Layer -1.png ">
+                                    <img class="card-img-top " src="/img/web.svg ">
                                     <%}%>
                                         <%if(user.domain_1=="app_dev"){%>
-                                            <img class="card-img-top " src="/img/Layer -2.png ">
+                                            <img class="card-img-top " src="/img/app.svg ">
                                             <%}%>
                                                 <%if(user.domain_1=="ui"){%>
-                                                    <img class="card-img-top " src="/img/Layer -3.png ">
+                                                    <img class="card-img-top " src="/img/ui.svg ">
                                                     <%}%>
                                                         <%if(user.domain_1=="cyber"){%>
-                                                            <img class="card-img-top " src="/img/Layer -4.png ">
+                                                            <img class="card-img-top " src="/img/cyber.svg ">
                                                             <%}%>
                                                                 <div class="card-body"
                                                                     style="display: flex; justify-content: center; flex-direction: column;">
@@ -729,22 +1062,22 @@
                                                                     </button>
                                                                 </div>
                     </div>
-                    <%if((user.domain_2!="N /A")&&(user.domain_1!=user.domain_2)){%>
+                    <%if((user.domain_2!="N/A")&&(user.domain_1!=user.domain_2)){%>
                         <div class="card">
                             <%if(user.domain_2=="corporate"){%>
-                                <img class="card-img-top" src="/img/Layer 2.png ">
+                                <img class="card-img-top" src="/img/corp.svg ">
                                 <%}%>
                                     <%if(user.domain_2=="web"){%>
-                                        <img class="card-img-top " src="/img/Layer -1.png ">
+                                        <img class="card-img-top " src="/img/web.svg ">
                                         <%}%>
                                             <%if(user.domain_2=="app_dev"){%>
-                                                <img class="card-img-top " src="/img/Layer -2.png ">
+                                                <img class="card-img-top " src="/img/app.svg ">
                                                 <%}%>
                                                     <%if(user.domain_2=="ui"){%>
-                                                        <img class="card-img-top " src="/img/Layer -3.png ">
+                                                        <img class="card-img-top " src="/img/ui.svg ">
                                                         <%}%>
                                                             <%if(user.domain_2=="cyber"){%>
-                                                                <img class="card-img-top " src="/img/Layer -4.png ">
+                                                                <img class="card-img-top " src="/img/cyber.svg ">
                                                                 <%}%>
                                                                     <div class="card-body"
                                                                         style="display: flex; justify-content: center; flex-direction: column;">
@@ -827,7 +1160,7 @@
         <div class="chat-popup form-container" id="myForm">
             <h2>Contact us</h2>
             <a href="mailto: communications@gmail.com"><button type="button" class="button">Send Email</button></a>
-            <br><a href="tel:7778951101"><button class="button" type="button">Call Us</button></a>
+            <br><a href="tel:123456789"><button class="button" type="button">Call Us</button></a>
             <br><button class="button" type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </div>
     </div>

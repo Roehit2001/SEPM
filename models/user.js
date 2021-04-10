@@ -29,7 +29,7 @@ const userSchema = new mongoose.Schema({
     time: String,
     day1: String,
     time1: String,
-    corp: String,
+    // corp: String,
 });
 
 module.exports = mongoose.model('User', userSchema);

@@ -193,7 +193,7 @@ app.post("/login", async (req, res) => {
                 req.session.user_id = user._id;
                 return res.redirect("/admin/" + user._id);
             }
-            if (user.email == "ewebdev.scro@gmail.com") {
+            if (user.email == "eadmin@gmail.com") {
                 console.log("eAdmin Logged in" + datetime);
                 req.session.user_id = user._id;
                 return res.redirect("/eadmin/" + user._id);
@@ -327,12 +327,12 @@ app.get("/choose/:id", requireLogin, (req, res) => {
 });
 app.get("/eadmin/:id", requireLogin, (req, res) => {
     User.findById(req.params.id, (err, user) => {
-        if ((user.email == "admin@gmail.com")) {
+        // if ((user.email == "eadmin@gmail.com")) {
 
             Question.find({}, (err, data) => {
                 res.render("eadmin", { id: req.params.id, data: data });
             })
-        } else { res.redirect("/login"); }
+        // } else { res.redirect("/login"); }
 
     });
 
@@ -361,6 +361,7 @@ app.post("/question", async (req, res) => {
         domain
     });
     await qu.save();
+    console.log("Question added");
     res.redirect("/eadmin/" + req.params.id);
 });
 app.post("/questions", async (req, res) => {
@@ -623,7 +624,6 @@ app.post("/data/:name/:admin", requireLogin, async (req, res) => {
             time1,
             level2,
             time2,
-            Assi,
             d1,
             t1,
             t2,

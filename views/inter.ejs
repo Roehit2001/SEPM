@@ -22,27 +22,24 @@
         <div class="card-deck col-9" style="position: relative; margin-top: 10%; z-index: 99;">
             <div class="card ">
               <%if(user.domain_2=="corporate"){%>
-                <img class="card-img-top" src="/img/Layer 2.png "><%}%>
+                <img class="card-img-top" src="/img/corp.svg"><%}%>
                 <%if(user.domain_2=="web"){%>
-                      <img class="card-img-top " src="/img/Layer -1.png "><%}%>
-                      <%if(user.domain_2=="C_vision"){%>
-                        <img class="card-img-top " src="/img/Layer -2.png "><%}%>
-                        <%if(user.domain_2=="df"){%>
-                            <img class="card-img-top " src="/img/Layer -3.png "><%}%>
-                            <%if(user.domain_2=="fs"){%>
+                      <img class="card-img-top " src="/img/web.svg"><%}%>
+                      <%if(user.domain_2=="app_dev"){%>
+                        <img class="card-img-top " src="/img/app.svg "><%}%>
+                        <%if(user.domain_2=="ui"){%>
+                            <img class="card-img-top " src="/img/ui.svg "><%}%>
+                            <%if(user.domain_2=="cyber"){%>
                                 <img class="card-img-top " src="/img/Layer -4.png "><%}%>
               <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-                <h5 class="card-title " style="text-align: center; "><%if(user.domain_2=="fs"){%>
-                  Flight Systems
+                <h5 class="card-title " style="text-align: center; "><%if(user.domain_2=="cyber"){%>
+                  Cyber Security
                   <%}%>
-                  <%if(user.domain_2=="C_vision"){%>
-                      Computer Vision
+                  <%if(user.domain_2=="app_dev"){%>
+                      App Development
                       <%}%>
-                      <%if(user.domain_2=="fs"){%>
-                          Flight Systems
-                          <%}%>
-                          <%if(user.domain_2=="df"){%>
-                              Design and Fabrication
+                          <%if(user.domain_2=="ui"){%>
+                              UI & UX
                               <%}%>
                               <%if(user.domain_2=="corporate"){%>
                                   Corporate
@@ -55,7 +52,7 @@
                                 <button style="margin-left: 30%;
                                 margin-right: auto;
                                 width: 40%;
-                                height: 38px;" disabled class="button">Write Exam</button>
+                                height: 38px;"  class="button">Write Exam</button>
                                 <%}else{%>
                                     <p>Exam Given</p>
                                             <%}%>
@@ -64,27 +61,24 @@
             </div>
             <div class="card ">
               <%if(user.domain_1=="corporate"){%>
-                <img class="card-img-top" src="/img/Layer 2.png "><%}%>
+                <img class="card-img-top" src="/img/corp.svg"><%}%>
                 <%if(user.domain_1=="web"){%>
-                      <img class="card-img-top " src="/img/Layer -1.png "><%}%>
-                      <%if(user.domain_1=="C_vision"){%>
-                        <img class="card-img-top " src="/img/Layer -2.png "><%}%>
-                        <%if(user.domain_1=="df"){%>
-                            <img class="card-img-top " src="/img/Layer -3.png "><%}%>
-                            <%if(user.domain_1=="fs"){%>
-                                <img class="card-img-top " src="/img/Layer -4.png "><%}%>
+                      <img class="card-img-top " src="/img/web.svg "><%}%>
+                      <%if(user.domain_1=="app_dev"){%>
+                        <img class="card-img-top " src="/img/app.svg "><%}%>
+                        <%if(user.domain_1=="ui"){%>
+                            <img class="card-img-top " src="/img/ui.svg "><%}%>
+                            <%if(user.domain_1=="cyber"){%>
+                                <img class="card-img-top " src="/img/cyber.svg "><%}%>
               <div class="card-body " style="display: flex; justify-content: center; flex-direction: column; ">
-                <h5 class="card-title " style="text-align: center; "><%if(user.domain_1=="fs"){%>
-                  Flight Systems
+                <h5 class="card-title " style="text-align: center; "><%if(user.domain_1=="cyber"){%>
+                  Cyber Security
                   <%}%>
-                  <%if(user.domain_1=="C_vision"){%>
-                      Computer Vision
+                  <%if(user.domain_1=="app_dev"){%>
+                      App Development
                       <%}%>
-                      <%if(user.domain_1=="fs"){%>
-                          Flight Systems
-                          <%}%>
-                          <%if(user.domain_1=="df"){%>
-                              Design and Fabrication
+                          <%if(user.domain_1=="ui"){%>
+                              UI & UX
                               <%}%>
                               <%if(user.domain_1=="corporate"){%>
                                   Corporate
@@ -97,7 +91,7 @@
                                 <button class="button" style="margin-left: 30%;
                                 margin-right: auto;
                                 width: 40%;
-                                height: 38px;" disabled>Write Exam</button>
+                                height: 38px;" >Write Exam</button>
                                 <%}else{%>
                                   <p>Exam Given</p>
                                     <%}%>
@@ -114,17 +108,17 @@
 
 <!-- <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <%if(user.domain_1=="fs"){%>
-        Flight Systems
+    <%if(user.domain_1=="cyber"){%>
+        Cyber Security
         <%}%>
-        <%if(user.domain_1=="C_vision"){%>
-            Computer Vision
+        <%if(user.domain_1=="app_dev"){%>
+            App Development
             <%}%>
-            <%if(user.domain_1=="fs"){%>
-                Flight Systems
+            <%if(user.domain_1=="cyber"){%>
+                Cyber Security
                 <%}%>
-                <%if(user.domain_1=="df"){%>
-                    Design and Fabrication
+                <%if(user.domain_1=="ui"){%>
+                    UI & UX
                     <%}%>
                     <%if(user.domain_1=="corporate"){%>
                         Corporate
@@ -144,17 +138,17 @@ Exam Given
 
   </div>
   <div class="column" style="background-color:#bbb;">
-    <%if(user.domain_2=="fs"){%>
-        Flight Systems
+    <%if(user.domain_2=="cyber"){%>
+        Cyber Security
         <%}%>
-        <%if(user.domain_2=="C_vision"){%>
-            Computer Vision
+        <%if(user.domain_2=="app_dev"){%>
+            App Development
             <%}%>
-            <%if(user.domain_2=="fs"){%>
-                Flight Systems
+            <%if(user.domain_2=="cyber"){%>
+                Cyber Security
                 <%}%>
-                <%if(user.domain_2=="df"){%>
-                    Design and Fabrication
+                <%if(user.domain_2=="ui"){%>
+                    UI & UX
                     <%}%>
                     <%if(user.domain_2=="corporate"){%>
                         Corporate
