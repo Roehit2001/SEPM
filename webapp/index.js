@@ -143,6 +143,9 @@ Web.save();
 app.get("/register", (req, res) => {
     res.render('register', { msg: "" });
 });
+app.get("/home",(req,res)=>{
+res.render('home');
+});
 app.post("/register", async (req, res) => {
     const { name, department, whatsapp_number, email, reg, year, phone_number, password } = req.body;
     const hash = await bcrypt.hash(password, 12);
